@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrl}\toprule
+Instance & $n$ & $B$ & $N_q$ & Payload (Gb/s) & Receive pass (s) & Evidence \\ \midrule
+Mattis & $10^7$ & 1 & 4 & 307.0 & 326.73 & $2E=-n(n-1)$ at step 1 \\
+Mattis & $10^7$ & 8 & 4 & 306.9--307.0 & 326.75--326.83 & $2E=-n(n-1)$ at step 1 \\
+random & $10^7$ & 8 & 4 & 306.2--306.4 & 327.39--327.61 & $2E=-4.12\times10^{10}$ at step 10 \\
+Mattis & $10^6$ & 8 & 1--8 & 307.0--307.1 & 3.361--3.362 & $2E=-n(n-1)$ \\
+Mattis & $10^6$ & 1 & 4 & 307.0 & 3.362 & $2E=-n(n-1)$ \\
+random & $10^6$ & 8 & 4 & 307.0--307.1 & 3.361--3.362 & energy reported \\
+Mattis & $10^5$ & 8 & 4 & 308.8--309.4 & 0.0417--0.0418 & GPU records match \\
+random & $10^5$ & 8 & 4 & 308.8--311.5 & 0.0414--0.0418 & GPU records match \\
+random & $10^4$ & 8 & 4 & 153.6--153.7 & 0.0021 & CPU records match \\
+\bottomrule
+\end{tabular}

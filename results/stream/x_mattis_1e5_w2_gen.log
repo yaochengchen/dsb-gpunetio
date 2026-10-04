@@ -1,0 +1,23 @@
+# 2026-10-03T02:05:49+09:00 st_gen x_mattis_1e5_w2 (GPU 0019:01:00.0) -N 100000 -K 20 -i mattis -s 42
+# link: enP2s2np0        UP             08:20:e7:47:10:8e <BROADCAST,MULTICAST,UP,LOWER_UP> 
+# phy before:  tx_packets_phy: 884083822730  rx_packets_phy: 8062028  tx_bytes_phy: 1814215815584450  tx_discards_phy: 0  tx_errors_phy: 0
+[2026-10-03 02:05:49:170361][895404224][DOCA][INF][CORE][doca_log.cpp:1281] DOCA version 3.4.0112
+# NIC 0002:01:00.0 = enP2s2np0, MTU 9000
+[2026-10-03 02:05:50:108074][895404224][DOCA][WRN][GPUNETIO][doca_gpunetio.cpp:194] GDRCopy gdrdrv kernel module unusable. Can't allocate memory with type DOCA_GPU_MEM_TYPE_GPU_CPU.
+[2026-10-03 02:05:50:108359][895404224][DOCA][WRN][FLOW][engine_model.c:90] adapting queue depth to 128.
+[2026-10-03 02:05:50:150091][895404224][DOCA][WRN][FLOW][hws_port.c:937] ARGUMENT_256B resource doesn't exist, skip creating NAT64 actions
+[2026-10-03 02:05:50:152848][895404224][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb3b352787000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:05:50:152857][895404224][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:05:50:152942][895404224][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb3b352787000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x6c4d48
+[2026-10-03 02:05:50:192687][895404224][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb3b352787000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:05:50:192696][895404224][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:05:50:192775][895404224][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb3b352787000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x6c4d48
+# gen_kernel: 101 blocks x 512 threads (264 fit at once)
+[2026-10-03 02:05:50:194541][895404224][DOCA][INF][ST][gen_host.c:364][main] generator up: n=100000 (4 column blocks, 400000 frames/pass, 0.002 TB/pass) passes=21 queues=4 synth blocks=96 ring=2048 burst=512 instance=mattis seed=42 pace=none 0 Gb/s tx mode 2 -> 58:a2:e1:db:db:80 Ethertype 0xd5b2
+    t(s) |  acked        synth       posted       frames       Gb/s |    ring%      tx%     ack%  txerr slotwait    bursts
+     1.0 |     19      7854360      7848832      7846784      253.1 |     0.0%    85.3%    11.8%      0   367784     15302
+         synth probes: blocks entered 96, tickets 7854456, payloads written 7854362  (mirror tick 1989)
+     2.0 |     21      8400000      8400000      8400000       17.8 |     0.0%     5.6%     1.2%      0   393336     16380
+         synth probes: blocks entered 96, tickets 8400096, payloads written 8400000  (mirror tick 3974)
+# all 21 passes acknowledged; 8400000 data frames sent; last ACK reported 0 lost
+# phy after:   tx_packets_phy: 884092222814  rx_packets_phy: 8070836  tx_bytes_phy: 1814250255590162  tx_discards_phy: 0  tx_errors_phy: 0

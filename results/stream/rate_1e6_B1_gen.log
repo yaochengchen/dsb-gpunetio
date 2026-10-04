@@ -1,0 +1,43 @@
+# 2026-10-03T02:19:20+09:00 st_gen rate_1e6_B1 (GPU 0019:01:00.0) -N 1000000 -K 2 -i mattis -s 42
+# link: enP2s2np0        UP             08:20:e7:47:10:8e <BROADCAST,MULTICAST,UP,LOWER_UP> 
+# phy before:  tx_packets_phy: 884572222871  rx_packets_phy: 8458779  tx_bytes_phy: 1816218255594038  tx_discards_phy: 0  tx_errors_phy: 0
+[2026-10-03 02:19:20:339694][801491136][DOCA][INF][CORE][doca_log.cpp:1281] DOCA version 3.4.0112
+# NIC 0002:01:00.0 = enP2s2np0, MTU 9000
+[2026-10-03 02:19:21:285588][801491136][DOCA][WRN][GPUNETIO][doca_gpunetio.cpp:194] GDRCopy gdrdrv kernel module unusable. Can't allocate memory with type DOCA_GPU_MEM_TYPE_GPU_CPU.
+[2026-10-03 02:19:21:285880][801491136][DOCA][WRN][FLOW][engine_model.c:90] adapting queue depth to 128.
+[2026-10-03 02:19:21:327708][801491136][DOCA][WRN][FLOW][hws_port.c:937] ARGUMENT_256B resource doesn't exist, skip creating NAT64 actions
+[2026-10-03 02:19:21:330481][801491136][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb4e61a567000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:19:21:330489][801491136][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:19:21:330587][801491136][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb4e61a567000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x6c4d48
+[2026-10-03 02:19:21:371333][801491136][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb4e61a567000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:19:21:371344][801491136][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:19:21:371442][801491136][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0xb4e61a567000: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x6c4d48
+# gen_kernel: 101 blocks x 512 threads (264 fit at once)
+[2026-10-03 02:19:21:373198][801491136][DOCA][INF][ST][gen_host.c:364][main] generator up: n=1000000 (32 column blocks, 32000000 frames/pass, 0.129 TB/pass) passes=3 queues=4 synth blocks=96 ring=2048 burst=512 instance=mattis seed=42 pace=none 0 Gb/s tx mode 2 -> 58:a2:e1:db:db:80 Ethertype 0xd5b2
+    t(s) |  acked        synth       posted       frames       Gb/s |    ring%      tx%     ack%  txerr slotwait    bursts
+     1.0 |      0      9017464      9011712      9009664      290.6 |     0.0%    97.2%     0.0%      0   422400     17597
+         synth probes: blocks entered 96, tickets 9017565, payloads written 9017488  (mirror tick 1987)
+     2.0 |      0     18535016     18529280     18527232      307.0 |     0.0%    97.0%     0.0%      0   868488     36186
+         synth probes: blocks entered 96, tickets 18535115, payloads written 18535028  (mirror tick 3972)
+     3.0 |      0     28056648     28050944     28048896      307.1 |     0.0%    97.1%     0.0%      0  1314864     54783
+         synth probes: blocks entered 96, tickets 28056744, payloads written 28056648  (mirror tick 5958)
+# phy t=5 s  tx_packets_phy 884609508672 (+37285801)  rx_packets_phy 8493768 (+34989 since start)
+     4.0 |      1     37510757     37505024     37502976      304.9 |     0.0%    95.2%     1.8%      0  1757472     73248
+         synth probes: blocks entered 96, tickets 37510864, payloads written 37510768  (mirror tick 7946)
+     5.0 |      1     47030440     47025152     47023104      307.1 |     0.0%    97.0%     0.0%      0  2203728     91842
+         synth probes: blocks entered 96, tickets 47030536, payloads written 47030440  (mirror tick 9937)
+     6.0 |      1     56553128     56547328     56545280      307.1 |     0.0%    97.1%     0.0%      0  2650104    110440
+         synth probes: blocks entered 96, tickets 56553224, payloads written 56553128  (mirror tick 11929)
+     7.0 |      2     66009393     66003968     66001920      305.0 |     0.0%    95.2%     1.8%      0  3093096    128910
+         synth probes: blocks entered 96, tickets 66009493, payloads written 66009416  (mirror tick 13919)
+     8.0 |      2     75525190     75519488     75517952      306.9 |     0.0%    97.0%     0.0%      0  3539160    147496
+         synth probes: blocks entered 96, tickets 75525295, payloads written 75525207  (mirror tick 15903)
+# phy t=10 s  tx_packets_phy 884657123533 (+84900662)  rx_packets_phy 8537018 (+78239 since start)
+     9.0 |      2     85044701     85039104     85037568      307.0 |     0.0%    97.0%     0.0%      0  3985392    166089
+         synth probes: blocks entered 96, tickets 85044800, payloads written 85044704  (mirror tick 17888)
+    10.0 |      2     94564712     94558720     94556672      307.0 |     0.0%    97.0%     0.0%      0  4431648    184681
+         synth probes: blocks entered 96, tickets 94564808, payloads written 94564712  (mirror tick 19873)
+    11.0 |      3     96000000     96000000     96000000       46.6 |     0.0%    13.6%     1.8%      0  4498848    187500
+         synth probes: blocks entered 96, tickets 96000096, payloads written 96000000  (mirror tick 21855)
+# all 3 passes acknowledged; 96000000 data frames sent; last ACK reported 0 lost
+# phy after:   tx_packets_phy: 884668222883  rx_packets_phy: 8547101  tx_bytes_phy: 1816611855594854  tx_discards_phy: 0  tx_errors_phy: 0

@@ -1,0 +1,73 @@
+# 2026-10-03T02:05:43+09:00 st_recv x_mattis_1e5_w2 -N 100000 -B 8 -K 20 -i mattis -s 42
+# link: ens7np0          UP             58:a2:e1:db:db:80 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+# phy before:  rx_wqe_err: 0  rx_out_of_buffer: 81351872  rx_steer_missed_packets: 60235933604  tx_packets_phy: 272515376  rx_packets_phy: 2343607739544  rx_crc_errors_phy: 0  rx_bytes_phy: 4809089890191716  rx_oversize_pkts_phy: 0  rx_discards_phy: 0  rx_buffer_passed_thres_phy: 0  rx_prio0_buf_discard: 0  rx_prio1_buf_discard: 0  rx_prio2_buf_discard: 0  rx_prio3_buf_discard: 0  rx_prio4_buf_discard: 0  rx_prio5_buf_discard: 0  rx_prio6_buf_discard: 0  rx_prio7_buf_discard: 0
+[2026-10-03 02:05:43:258206][1385336832][DOCA][INF][CORE][doca_log.cpp:1281] DOCA version 3.4.0112
+# NIC 0000:bd:00.0 = ens7np0, MTU 9000
+[2026-10-03 02:05:43:761253][1385336832][DOCA][ERR][GPUNETIO][gdrcopy.cpp:43] Failed to find GDRCopy library libgdrapi.so (GDRCOPY_PATH_L=(null))
+[2026-10-03 02:05:43:761261][1385336832][DOCA][WRN][GPUNETIO][doca_gpunetio.cpp:190] GDRCopy and/or gdrdrv kernel module not found. Can't allocate memory with type DOCA_GPU_MEM_TYPE_GPU_CPU.
+[2026-10-03 02:05:43:761311][1385336832][DOCA][WRN][FLOW][engine_model.c:90] adapting queue depth to 128.
+[2026-10-03 02:05:43:854447][1385336832][DOCA][WRN][FLOW][hws_port.c:937] ARGUMENT_256B resource doesn't exist, skip creating NAT64 actions
+[2026-10-03 02:05:43:857879][1385336832][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1d11040: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:05:43:857890][1385336832][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:05:43:858050][1385336832][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1d11040: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x8dfded
+[2026-10-03 02:05:43:868662][1385336832][DOCA][INF][ST][recv_host.c:176][create_rxq] RX queue: 16384 slots x 4096 B, 67.1 MB cyclic buffer in GPU memory
+[2026-10-03 02:05:43:896029][1385336832][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1d11040: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:05:43:896068][1385336832][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:05:43:896377][1385336832][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1d11040: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x8dfded
+# my MAC 58:a2:e1:db:db:80 (the generator must send to this address)
+[state] n=100000 B=8: x,y 4.1 MB each, signs 0.1 MB, acc 3.2 MB, 4 column blocks, 4032 words/row
+[2026-10-03 02:05:43:903450][1385336832][DOCA][INF][ST][recv_host.c:380][main] receiver up: n=100000 B=8 K=20 workers=372 instance=mattis xi=0.0015811388 dt=1.1; Ethertype 0xd5b2; waiting for pass 0
+# n 100000 B 8 K 20 workers 372 instance mattis seed 42 xi 0.00158113881 dt 1.1 frames/pass 400000 payload/pass 0.002 TB
+# init chk 0x65eb953f62d8e06f  (Mattis ground state 2E = -9999900000)
+  t      1.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 184977, workers up 372/372)
+  t      2.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 369861, workers up 372/372)
+  t      3.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 554931, workers up 372/372)
+  t      4.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 739629, workers up 372/372)
+# phy t=5 s  rx_packets_phy 2343607739544  (+0 since start)
+  t      5.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 924606, workers up 372/372)
+  t      6.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 1109675, workers up 372/372)
+pass   0 upd  t     6.382 s      2.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -193764  chk 0x37ea9693628cf637  recv-wait 99.9%  2E[93600,86076,-193764,48924,62364,77500,89596,-74724]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.107 ms  gaps>1ms 0 >5ms 0  call max 66 full 0  backlog max 986/16384
+pass   1 upd  t     0.052 s    247.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.2%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.053 ms  gaps>1ms 0 >5ms 0  call max 96 full 0  backlog max 2251/16384
+pass   2 upd  t     0.042 s    309.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.223 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 3552/16384
+pass   3 upd  t     0.042 s    308.9 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.097 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 3003/16384
+pass   4 upd  t     0.042 s    309.4 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.185 ms  gaps>1ms 0 >5ms 0  call max 102 full 0  backlog max 2273/16384
+pass   5 upd  t     0.042 s    309.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.076 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2448/16384
+pass   6 upd  t     0.042 s    309.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.011 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2469/16384
+pass   7 upd  t     0.042 s    308.8 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.160 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2391/16384
+pass   8 upd  t     0.042 s    308.9 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.040 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2346/16384
+pass   9 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.145 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2398/16384
+pass  10 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.011 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 3730/16384
+pass  11 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.011 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2636/16384
+pass  12 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.228 ms  gaps>1ms 0 >5ms 0  call max 100 full 0  backlog max 2346/16384
+  t      0.0 s  pass 13  178.2 Gb/s payload  frames 5530666  rx_frames 5530959  bad 0  dropped bursts 0  (rx polls 1275967, workers up 372/372)
+pass  13 upd  t     0.042 s    308.8 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.175 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2405/16384
+pass  14 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.081 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2449/16384
+pass  15 upd  t     0.042 s    308.8 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.011 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2337/16384
+pass  16 upd  t     0.042 s    308.9 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.020 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2569/16384
+pass  17 upd  t     0.042 s    309.0 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.226 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2698/16384
+pass  18 upd  t     0.042 s    309.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.144 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2299/16384
+pass  19 upd  t     0.042 s    309.1 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.155 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2400/16384
+pass  20 fin  t     0.042 s    308.9 Gb/s  frames 400000/400000 lost 0 bad 0 drop 0  best 2E -9999900000  chk 0x37ea9693628cf637  recv-wait 92.4%  2E[-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000,-9999900000]
+         rxw 400004 (expect+queues 400004, diff 0)  gap max 0.054 ms  gaps>1ms 0 >5ms 0  call max 101 full 0  backlog max 2298/16384
+# RUN OK: every pass complete, no frame lost
+# phy after:   rx_wqe_err: 0  rx_out_of_buffer: 81351872  rx_steer_missed_packets: 60235933604  tx_packets_phy: 272524184  rx_packets_phy: 2343616139628  rx_crc_errors_phy: 0  rx_bytes_phy: 4809124330197428  rx_oversize_pkts_phy: 0  rx_discards_phy: 0  rx_buffer_passed_thres_phy: 0  rx_prio0_buf_discard: 0  rx_prio1_buf_discard: 0  rx_prio2_buf_discard: 0  rx_prio3_buf_discard: 0  rx_prio4_buf_discard: 0  rx_prio5_buf_discard: 0  rx_prio6_buf_discard: 0  rx_prio7_buf_discard: 0

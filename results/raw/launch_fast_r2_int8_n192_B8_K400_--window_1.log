@@ -1,0 +1,10 @@
+client 08:20:e7:47:10:8e on enP2s2np0 (MTU 9000) -> server 58:a2:e1:db:db:80
+model 0: n=192 format=3 36864 bytes in 27 fragments, acknowledged
+
+[launch_fast_r2] n=192 B=8 K=400 format=3 models=1 closed-loop
+  requests 100000 ok 100000 error 0 lost 0 timeouts 0 send_fail 0, throughput 1.0 kreq/s (offered 0.0)
+  RTT us     p50 958.05  p90 965.83  p99 967.94  p99.9 972.00  max 1035.97  mean 960.56
+  server us  p50 946.61  p99 955.00   (queue+solve+tx as reported)
+  wire+stack p50 10.97  p99 14.18   (RTT - server)
+  verify: energy 3000/3000 match, reference trajectory 20/20 match
+SUMMARY,launch_fast_r2,3,192,8,400,1,0,1,100000,0,0,1.0,958.05,967.94,972.00,960.56,946.61,955.00,10.97,0,0

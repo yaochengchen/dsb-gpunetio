@@ -1,0 +1,2 @@
+option('st_cuda_arch', type: 'string', value: 'sm_120',
+	description: 'CUDA architecture: sm_120 (PU2, RTX PRO 6000 receiver) or sm_90 (PU3, GH200 generator)')

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-02",
+  "source": "Author clarification in this editing conversation",
+  "explanation_zh": "RUN INVALID 由额外的其他网络流量触发。程序识别并排除这些非 dSB 帧，它们没有参与求解累加，不影响结果。",
+  "reviewed_events": {
+    "full_mattis_1e7_B8": {"pass": 7, "bad": 1, "lost": 0, "dropped_bursts": 0},
+    "full_random_1e7_B8": {"pass": 2, "bad": 1, "lost": 0, "dropped_bursts": 0}
+  },
+  "code_check": "recv_kernel.cu classifies unmatched magic/type as SEG_BAD, increments l_bad, and calls accumulate_frame only for SEG_STREAM. recv_host.c prints RUN INVALID for any nonzero bad count, even with complete stream-frame totals.",
+  "scope": "These two reviewed events only; do not suppress unknown malformed-frame events or alter original logs."
+}

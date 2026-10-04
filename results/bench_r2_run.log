@@ -1,0 +1,241 @@
+done --format pm1 --n 64 --B 1 --K 50 --device 0
+done --format pm1 --n 64 --B 1 --K 100 --device 0
+done --format pm1 --n 64 --B 1 --K 200 --device 0
+done --format pm1 --n 64 --B 1 --K 400 --device 0
+done --format pm1 --n 64 --B 8 --K 50 --device 0
+done --format pm1 --n 64 --B 8 --K 100 --device 0
+done --format pm1 --n 64 --B 8 --K 200 --device 0
+done --format pm1 --n 64 --B 8 --K 400 --device 0
+done --format pm1 --n 64 --B 32 --K 50 --device 0
+done --format pm1 --n 64 --B 32 --K 100 --device 0
+done --format pm1 --n 64 --B 32 --K 200 --device 0
+done --format pm1 --n 64 --B 32 --K 400 --device 0
+done --format pm1 --n 128 --B 1 --K 50 --device 0
+done --format pm1 --n 128 --B 1 --K 100 --device 0
+done --format pm1 --n 128 --B 1 --K 200 --device 0
+done --format pm1 --n 128 --B 1 --K 400 --device 0
+done --format pm1 --n 128 --B 8 --K 50 --device 0
+done --format pm1 --n 128 --B 8 --K 100 --device 0
+done --format pm1 --n 128 --B 8 --K 200 --device 0
+done --format pm1 --n 128 --B 8 --K 400 --device 0
+done --format pm1 --n 128 --B 32 --K 50 --device 0
+done --format pm1 --n 128 --B 32 --K 100 --device 0
+done --format pm1 --n 128 --B 32 --K 200 --device 0
+done --format pm1 --n 128 --B 32 --K 400 --device 0
+done --format pm1 --n 192 --B 1 --K 50 --device 0
+done --format pm1 --n 192 --B 1 --K 100 --device 0
+done --format pm1 --n 192 --B 1 --K 200 --device 0
+done --format pm1 --n 192 --B 1 --K 400 --device 0
+done --format pm1 --n 192 --B 8 --K 50 --device 0
+done --format pm1 --n 192 --B 8 --K 100 --device 0
+done --format pm1 --n 192 --B 8 --K 200 --device 0
+done --format pm1 --n 192 --B 8 --K 400 --device 0
+n=192 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 192 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=192 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 192 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=192 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 192 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=192 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 192 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+done --format pm1 --n 256 --B 1 --K 50 --device 0
+done --format pm1 --n 256 --B 1 --K 100 --device 0
+done --format pm1 --n 256 --B 1 --K 200 --device 0
+done --format pm1 --n 256 --B 1 --K 400 --device 0
+done --format pm1 --n 256 --B 8 --K 50 --device 0
+done --format pm1 --n 256 --B 8 --K 100 --device 0
+done --format pm1 --n 256 --B 8 --K 200 --device 0
+done --format pm1 --n 256 --B 8 --K 400 --device 0
+n=256 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 256 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=256 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 256 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=256 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 256 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=256 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 256 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+done --format pm1 --n 512 --B 1 --K 50 --device 0
+done --format pm1 --n 512 --B 1 --K 100 --device 0
+done --format pm1 --n 512 --B 1 --K 200 --device 0
+done --format pm1 --n 512 --B 1 --K 400 --device 0
+done --format pm1 --n 512 --B 8 --K 50 --device 0
+done --format pm1 --n 512 --B 8 --K 100 --device 0
+done --format pm1 --n 512 --B 8 --K 200 --device 0
+done --format pm1 --n 512 --B 8 --K 400 --device 0
+n=512 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 512 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 512 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 512 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=32 pm1 does not fit 49152 B of shared memory (needs 0)
+skip --format pm1 --n 512 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+done --format ternary --n 64 --B 1 --K 50 --device 0
+done --format ternary --n 64 --B 1 --K 100 --device 0
+done --format ternary --n 64 --B 1 --K 200 --device 0
+done --format ternary --n 64 --B 1 --K 400 --device 0
+done --format ternary --n 64 --B 8 --K 50 --device 0
+done --format ternary --n 64 --B 8 --K 100 --device 0
+done --format ternary --n 64 --B 8 --K 200 --device 0
+done --format ternary --n 64 --B 8 --K 400 --device 0
+done --format ternary --n 64 --B 32 --K 50 --device 0
+done --format ternary --n 64 --B 32 --K 100 --device 0
+done --format ternary --n 64 --B 32 --K 200 --device 0
+done --format ternary --n 64 --B 32 --K 400 --device 0
+done --format ternary --n 128 --B 1 --K 50 --device 0
+done --format ternary --n 128 --B 1 --K 100 --device 0
+done --format ternary --n 128 --B 1 --K 200 --device 0
+done --format ternary --n 128 --B 1 --K 400 --device 0
+done --format ternary --n 128 --B 8 --K 50 --device 0
+done --format ternary --n 128 --B 8 --K 100 --device 0
+done --format ternary --n 128 --B 8 --K 200 --device 0
+done --format ternary --n 128 --B 8 --K 400 --device 0
+done --format ternary --n 128 --B 32 --K 50 --device 0
+done --format ternary --n 128 --B 32 --K 100 --device 0
+done --format ternary --n 128 --B 32 --K 200 --device 0
+done --format ternary --n 128 --B 32 --K 400 --device 0
+done --format ternary --n 192 --B 1 --K 50 --device 0
+done --format ternary --n 192 --B 1 --K 100 --device 0
+done --format ternary --n 192 --B 1 --K 200 --device 0
+done --format ternary --n 192 --B 1 --K 400 --device 0
+done --format ternary --n 192 --B 8 --K 50 --device 0
+done --format ternary --n 192 --B 8 --K 100 --device 0
+done --format ternary --n 192 --B 8 --K 200 --device 0
+done --format ternary --n 192 --B 8 --K 400 --device 0
+n=192 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 192 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=192 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 192 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=192 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 192 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=192 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 192 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+done --format ternary --n 256 --B 1 --K 50 --device 0
+done --format ternary --n 256 --B 1 --K 100 --device 0
+done --format ternary --n 256 --B 1 --K 200 --device 0
+done --format ternary --n 256 --B 1 --K 400 --device 0
+done --format ternary --n 256 --B 8 --K 50 --device 0
+done --format ternary --n 256 --B 8 --K 100 --device 0
+done --format ternary --n 256 --B 8 --K 200 --device 0
+done --format ternary --n 256 --B 8 --K 400 --device 0
+n=256 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 256 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=256 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 256 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=256 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 256 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=256 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 256 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=1 ternary does not fit 49152 B of shared memory (needs 86192)
+skip --format ternary --n 512 --B 1 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=1 ternary does not fit 49152 B of shared memory (needs 86192)
+skip --format ternary --n 512 --B 1 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=1 ternary does not fit 49152 B of shared memory (needs 86192)
+skip --format ternary --n 512 --B 1 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=1 ternary does not fit 49152 B of shared memory (needs 86192)
+skip --format ternary --n 512 --B 1 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=8 ternary does not fit 49152 B of shared memory (needs 87360)
+skip --format ternary --n 512 --B 8 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=8 ternary does not fit 49152 B of shared memory (needs 87360)
+skip --format ternary --n 512 --B 8 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=8 ternary does not fit 49152 B of shared memory (needs 87360)
+skip --format ternary --n 512 --B 8 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=8 ternary does not fit 49152 B of shared memory (needs 87360)
+skip --format ternary --n 512 --B 8 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 512 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 512 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 512 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=32 ternary does not fit 49152 B of shared memory (needs 0)
+skip --format ternary --n 512 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+done --format int8 --n 64 --B 1 --K 50 --device 0
+done --format int8 --n 64 --B 1 --K 100 --device 0
+done --format int8 --n 64 --B 1 --K 200 --device 0
+done --format int8 --n 64 --B 1 --K 400 --device 0
+done --format int8 --n 64 --B 8 --K 50 --device 0
+done --format int8 --n 64 --B 8 --K 100 --device 0
+done --format int8 --n 64 --B 8 --K 200 --device 0
+done --format int8 --n 64 --B 8 --K 400 --device 0
+done --format int8 --n 64 --B 32 --K 50 --device 0
+done --format int8 --n 64 --B 32 --K 100 --device 0
+done --format int8 --n 64 --B 32 --K 200 --device 0
+done --format int8 --n 64 --B 32 --K 400 --device 0
+done --format int8 --n 128 --B 1 --K 50 --device 0
+done --format int8 --n 128 --B 1 --K 100 --device 0
+done --format int8 --n 128 --B 1 --K 200 --device 0
+done --format int8 --n 128 --B 1 --K 400 --device 0
+done --format int8 --n 128 --B 8 --K 50 --device 0
+done --format int8 --n 128 --B 8 --K 100 --device 0
+done --format int8 --n 128 --B 8 --K 200 --device 0
+done --format int8 --n 128 --B 8 --K 400 --device 0
+done --format int8 --n 128 --B 32 --K 50 --device 0
+done --format int8 --n 128 --B 32 --K 100 --device 0
+done --format int8 --n 128 --B 32 --K 200 --device 0
+done --format int8 --n 128 --B 32 --K 400 --device 0
+done --format int8 --n 192 --B 1 --K 50 --device 0
+done --format int8 --n 192 --B 1 --K 100 --device 0
+done --format int8 --n 192 --B 1 --K 200 --device 0
+done --format int8 --n 192 --B 1 --K 400 --device 0
+done --format int8 --n 192 --B 8 --K 50 --device 0
+done --format int8 --n 192 --B 8 --K 100 --device 0
+done --format int8 --n 192 --B 8 --K 200 --device 0
+done --format int8 --n 192 --B 8 --K 400 --device 0
+n=192 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 192 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=192 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 192 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=192 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 192 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=192 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 192 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+n=256 B=1 int8 does not fit 49152 B of shared memory (needs 71216)
+skip --format int8 --n 256 --B 1 --K 50 --device 0 (does not fit or failed, see message above)
+n=256 B=1 int8 does not fit 49152 B of shared memory (needs 71216)
+skip --format int8 --n 256 --B 1 --K 100 --device 0 (does not fit or failed, see message above)
+n=256 B=1 int8 does not fit 49152 B of shared memory (needs 71216)
+skip --format int8 --n 256 --B 1 --K 200 --device 0 (does not fit or failed, see message above)
+n=256 B=1 int8 does not fit 49152 B of shared memory (needs 71216)
+skip --format int8 --n 256 --B 1 --K 400 --device 0 (does not fit or failed, see message above)
+n=256 B=8 int8 does not fit 49152 B of shared memory (needs 75072)
+skip --format int8 --n 256 --B 8 --K 50 --device 0 (does not fit or failed, see message above)
+n=256 B=8 int8 does not fit 49152 B of shared memory (needs 75072)
+skip --format int8 --n 256 --B 8 --K 100 --device 0 (does not fit or failed, see message above)
+n=256 B=8 int8 does not fit 49152 B of shared memory (needs 75072)
+skip --format int8 --n 256 --B 8 --K 200 --device 0 (does not fit or failed, see message above)
+n=256 B=8 int8 does not fit 49152 B of shared memory (needs 75072)
+skip --format int8 --n 256 --B 8 --K 400 --device 0 (does not fit or failed, see message above)
+n=256 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 256 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=256 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 256 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=256 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 256 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=256 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 256 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=1 int8 does not fit 49152 B of shared memory (needs 273456)
+skip --format int8 --n 512 --B 1 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=1 int8 does not fit 49152 B of shared memory (needs 273456)
+skip --format int8 --n 512 --B 1 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=1 int8 does not fit 49152 B of shared memory (needs 273456)
+skip --format int8 --n 512 --B 1 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=1 int8 does not fit 49152 B of shared memory (needs 273456)
+skip --format int8 --n 512 --B 1 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=8 int8 does not fit 49152 B of shared memory (needs 280896)
+skip --format int8 --n 512 --B 8 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=8 int8 does not fit 49152 B of shared memory (needs 280896)
+skip --format int8 --n 512 --B 8 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=8 int8 does not fit 49152 B of shared memory (needs 280896)
+skip --format int8 --n 512 --B 8 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=8 int8 does not fit 49152 B of shared memory (needs 280896)
+skip --format int8 --n 512 --B 8 --K 400 --device 0 (does not fit or failed, see message above)
+n=512 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 512 --B 32 --K 50 --device 0 (does not fit or failed, see message above)
+n=512 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 512 --B 32 --K 100 --device 0 (does not fit or failed, see message above)
+n=512 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 512 --B 32 --K 200 --device 0 (does not fit or failed, see message above)
+n=512 B=32 int8 does not fit 49152 B of shared memory (needs 0)
+skip --format int8 --n 512 --B 32 --K 400 --device 0 (does not fit or failed, see message above)
+wrote results/bench_pu2_r2.csv

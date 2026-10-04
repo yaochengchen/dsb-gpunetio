@@ -1,0 +1,48 @@
+# 2026-10-03T02:09:30+09:00 st_recv rate_1e6_q8 -N 1000000 -B 8 -K 2 -i mattis -s 42
+# link: ens7np0          UP             58:a2:e1:db:db:80 <BROADCAST,MULTICAST,UP,LOWER_UP> 
+# phy before:  rx_wqe_err: 0  rx_out_of_buffer: 81351872  rx_steer_missed_packets: 60235933604  tx_packets_phy: 272735397  rx_packets_phy: 2343904139649  rx_crc_errors_phy: 0  rx_bytes_phy: 4810305130198856  rx_oversize_pkts_phy: 0  rx_discards_phy: 0  rx_buffer_passed_thres_phy: 0  rx_prio0_buf_discard: 0  rx_prio1_buf_discard: 0  rx_prio2_buf_discard: 0  rx_prio3_buf_discard: 0  rx_prio4_buf_discard: 0  rx_prio5_buf_discard: 0  rx_prio6_buf_discard: 0  rx_prio7_buf_discard: 0
+[2026-10-03 02:09:30:764550][1634533376][DOCA][INF][CORE][doca_log.cpp:1281] DOCA version 3.4.0112
+# NIC 0000:bd:00.0 = ens7np0, MTU 9000
+[2026-10-03 02:09:31:187776][1634533376][DOCA][ERR][GPUNETIO][gdrcopy.cpp:43] Failed to find GDRCopy library libgdrapi.so (GDRCOPY_PATH_L=(null))
+[2026-10-03 02:09:31:187784][1634533376][DOCA][WRN][GPUNETIO][doca_gpunetio.cpp:190] GDRCopy and/or gdrdrv kernel module not found. Can't allocate memory with type DOCA_GPU_MEM_TYPE_GPU_CPU.
+[2026-10-03 02:09:31:187834][1634533376][DOCA][WRN][FLOW][engine_model.c:90] adapting queue depth to 128.
+[2026-10-03 02:09:31:277988][1634533376][DOCA][WRN][FLOW][hws_port.c:937] ARGUMENT_256B resource doesn't exist, skip creating NAT64 actions
+[2026-10-03 02:09:31:281385][1634533376][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1eb10b0: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:09:31:281395][1634533376][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:09:31:281555][1634533376][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1eb10b0: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x8dfded
+[2026-10-03 02:09:31:292733][1634533376][DOCA][INF][ST][recv_host.c:176][create_rxq] RX queue: 16384 slots x 4096 B, 67.1 MB cyclic buffer in GPU memory
+[2026-10-03 02:09:31:316788][1634533376][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1eb10b0: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x54e3a9
+[2026-10-03 02:09:31:316825][1634533376][DOCA][ERR][CORE][doca_dev.cpp:3025] Failed to query NIC_CAP register. err=DOCA_ERROR_DRIVER
+[2026-10-03 02:09:31:317103][1634533376][DOCA][ERR][CORE][linux_devx_adapter.cpp:181] devx adapter 0x1eb10b0: FW failed to execute general PRM command=0xb0c, status=BAD_PARAM_ERR (0x3) with syndrome=0x8dfded
+# my MAC 58:a2:e1:db:db:80 (the generator must send to this address)
+[state] n=1000000 B=8: x,y 33.0 MB each, signs 1.0 MB, acc 32.0 MB, 32 column blocks, 32256 words/row
+[2026-10-03 02:09:31:323873][1634533376][DOCA][INF][ST][recv_host.c:380][main] receiver up: n=1000000 B=8 K=2 workers=372 instance=mattis xi=0.00050000002 dt=1.1; Ethertype 0xd5b2; waiting for pass 0
+# n 1000000 B 8 K 2 workers 372 instance mattis seed 42 xi 0.000500000024 dt 1.1 frames/pass 32000000 payload/pass 0.129 TB
+# init chk 0x034eaa52480fc1d2  (Mattis ground state 2E = -999999000000)
+  t      1.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 184685, workers up 372/372)
+  t      2.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 369274, workers up 372/372)
+  t      3.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 553686, workers up 372/372)
+  t      4.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 738271, workers up 372/372)
+# phy t=5 s  rx_packets_phy 2343904139649  (+0 since start)
+  t      5.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 922771, workers up 372/372)
+  t      6.0 s  pass 0  0.0 Gb/s payload  frames 0  rx_frames 0  bad 0  dropped bursts 0  (rx polls 1107374, workers up 372/372)
+  t      7.0 s  pass 0  283.9 Gb/s payload  frames 8805603  rx_frames 8805845  bad 0  dropped bursts 0  (rx polls 1263960, workers up 372/372)
+  t      8.0 s  pass 0  307.1 Gb/s payload  frames 18327578  rx_frames 18327819  bad 0  dropped bursts 0  (rx polls 1419969, workers up 372/372)
+  t      9.0 s  pass 0  306.9 Gb/s payload  frames 27846112  rx_frames 27847263  bad 0  dropped bursts 0  (rx polls 1575933, workers up 372/372)
+pass   0 upd  t     9.443 s    109.3 Gb/s  frames 32000000/32000000 lost 0 bad 0 drop 0  best 2E -1742336  chk 0xdd9ffae494acf707  recv-wait 96.8%  2E[-218816,947100,-774224,841596,294400,965404,-1742336,-368900]
+         rxw 32000008 (expect+queues 32000008, diff 0)  gap max 0.066 ms  gaps>1ms 0 >5ms 0  call max 118 full 0  backlog max 2487/16384
+# phy t=10 s  rx_packets_phy 2343936334389  (+32194740 since start)
+  t      0.6 s  pass 1  304.8 Gb/s payload  frames 37297823  rx_frames 37298071  bad 0  dropped bursts 0  (rx polls 1732085, workers up 372/372)
+  t      1.6 s  pass 1  307.0 Gb/s payload  frames 46816651  rx_frames 46817748  bad 0  dropped bursts 0  (rx polls 1888151, workers up 372/372)
+  t      2.6 s  pass 1  307.0 Gb/s payload  frames 56337256  rx_frames 56337508  bad 0  dropped bursts 0  (rx polls 2044220, workers up 372/372)
+pass   1 upd  t     3.362 s    307.0 Gb/s  frames 32000000/32000000 lost 0 bad 0 drop 0  best 2E -999999000000  chk 0xdd9ffae494acf707  recv-wait 91.3%  2E[-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000]
+         rxw 32000008 (expect+queues 32000008, diff 0)  gap max 0.023 ms  gaps>1ms 0 >5ms 0  call max 105 full 0  backlog max 2454/16384
+  t      0.2 s  pass 2  305.1 Gb/s payload  frames 65800603  rx_frames 65800864  bad 0  dropped bursts 0  (rx polls 2200441, workers up 372/372)
+  t      1.2 s  pass 2  307.0 Gb/s payload  frames 75322056  rx_frames 75322316  bad 0  dropped bursts 0  (rx polls 2356545, workers up 372/372)
+# phy t=15 s  rx_packets_phy 2343983984298  (+79844649 since start)
+  t      2.2 s  pass 2  307.1 Gb/s payload  frames 84844302  rx_frames 84845410  bad 0  dropped bursts 0  (rx polls 2512671, workers up 372/372)
+  t      3.2 s  pass 2  307.0 Gb/s payload  frames 94365040  rx_frames 94365302  bad 0  dropped bursts 0  (rx polls 2668741, workers up 372/372)
+pass   2 fin  t     3.362 s    307.0 Gb/s  frames 32000000/32000000 lost 0 bad 0 drop 0  best 2E -999999000000  chk 0xdd9ffae494acf707  recv-wait 91.3%  2E[-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000,-999999000000]
+         rxw 32000008 (expect+queues 32000008, diff 0)  gap max 0.069 ms  gaps>1ms 0 >5ms 0  call max 105 full 0  backlog max 3379/16384
+# RUN OK: every pass complete, no frame lost
+# phy after:   rx_wqe_err: 0  rx_out_of_buffer: 81351872  rx_steer_missed_packets: 60235933604  tx_packets_phy: 272823757  rx_packets_phy: 2344000139673  rx_crc_errors_phy: 0  rx_bytes_phy: 4810698730200488  rx_oversize_pkts_phy: 0  rx_discards_phy: 0  rx_buffer_passed_thres_phy: 0  rx_prio0_buf_discard: 0  rx_prio1_buf_discard: 0  rx_prio2_buf_discard: 0  rx_prio3_buf_discard: 0  rx_prio4_buf_discard: 0  rx_prio5_buf_discard: 0  rx_prio6_buf_discard: 0  rx_prio7_buf_discard: 0

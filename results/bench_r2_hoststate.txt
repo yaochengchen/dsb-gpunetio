@@ -1,0 +1,37 @@
+== cpuidle (first core):
+  POLL disable=0
+  C1 disable=0
+  C1E disable=0
+  C6 disable=0
+== governor: schedutil
+== coalescing:
+Adaptive RX: on  TX: on
+rx-usecs:	8
+rx-frames:	128
+tx-usecs:	8
+tx-frames:	128
+== offloads:
+generic-receive-offload: on
+large-receive-offload: off
+== busy_poll: 0 busy_read: 0
+== IRQ affinity (ens7np0):
+  irq 166 -> cpus 3
+  irq 167 -> cpus 14
+  irq 168 -> cpus 10
+  irq 169 -> cpus 8
+  irq 170 -> cpus 15
+  irq 171 -> cpus 4
+  irq 172 -> cpus 10
+  irq 173 -> cpus 13
+  irq 174 -> cpus 9
+  irq 175 -> cpus 3
+  irq 176 -> cpus 10
+  irq 177 -> cpus 1
+  irq 178 -> cpus 2
+  irq 179 -> cpus 6
+  irq 180 -> cpus 3
+  irq 181 -> cpus 15
+  irq 182 -> cpus 11
+  irq 183 -> cpus 0
+  irq 184 -> cpus 7
+  irq 185 -> cpus 5

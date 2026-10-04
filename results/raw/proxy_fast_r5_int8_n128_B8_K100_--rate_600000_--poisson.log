@@ -1,0 +1,10 @@
+client 08:20:e7:47:10:8e on enP2s2np0 (MTU 9000) -> server 58:a2:e1:db:db:80
+model 0: n=128 format=3 16384 bytes in 12 fragments, acknowledged
+
+[proxy_fast_r5] n=128 B=8 K=100 format=3 models=1 open-loop Poisson
+  requests 100000 ok 100000 error 0 lost 0 timeouts 0 send_fail 0, throughput 602.4 kreq/s (offered 600.0)
+  RTT us     p50 236.16  p90 272.35  p99 313.12  p99.9 353.09  max 431.49  mean 239.27
+  server us  p50 203.70  p99 257.63   (queue+solve+tx as reported)
+  wire+stack p50 30.72  p99 79.56   (RTT - server)
+  verify: energy 3000/3000 match, reference trajectory 20/20 match
+SUMMARY,proxy_fast_r5,3,128,8,100,1,600000,1,100000,0,0,602.4,236.16,313.12,353.09,239.27,203.70,257.63,30.72,0,0

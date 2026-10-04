@@ -1,0 +1,10 @@
+client 08:20:e7:47:10:8e on enP2s2np0 (MTU 9000) -> server 58:a2:e1:db:db:80
+model 0: n=128 format=3 16384 bytes in 12 fragments, acknowledged
+
+[doca] n=128 B=8 K=100 format=3 models=1 open-loop Poisson
+  requests 100000 ok 100000 error 0 lost 0 timeouts 0 send_fail 0, throughput 10.1 kreq/s (offered 10.0)
+  RTT us     p50 169.76  p90 195.01  p99 299.26  p99.9 408.90  max 588.42  mean 177.54
+  server us  p50 153.54  p99 173.28   (queue+solve+tx as reported)
+  wire+stack p50 16.29  p99 144.77   (RTT - server)
+  verify: energy 3000/3000 match, reference trajectory 20/20 match
+SUMMARY,doca,3,128,8,100,1,10000,1,100000,0,0,10.1,169.76,299.26,408.90,177.54,153.54,173.28,16.29,0,0

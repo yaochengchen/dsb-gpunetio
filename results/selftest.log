@@ -1,0 +1,15 @@
+(base) [cyc@pu2 dsb-doca]$ ./bin/x86_64/selftest --device 0
+device 0: NVIDIA RTX PRO 6000 Blackwell Workstation Edition, sm_120, 188 SMs, worker smem 49152 B
+  [once] ok  fmt 1 n    2 B   1 K    2 : 2E -2  solve 9024 ns
+  [once] ok  fmt 1 n   33 B   3 K   50 : 2E -820  solve 32768 ns
+  [once] ok  fmt 1 n  128 B   8 K  200 : 2E -2148  solve 207808 ns
+  [once] ok  fmt 1 n  256 B  16 K  100 : 2E -7878  solve 345280 ns
+  [once] ok  fmt 1 n  500 B   8 K   60 : 2E -16564  solve 263904 ns
+  [once] ok  fmt 2 n   64 B   4 K  100 : 2E -212  solve 67648 ns
+  [once] ok  fmt 2 n  200 B   8 K  150 : 2E -4146  solve 298784 ns
+  [once] ok  fmt 2 n  384 B   8 K   50 : 2E -3152  solve 210048 ns
+  [once] ok  fmt 3 n   40 B   2 K   80 : 2E -44770  solve 54816 ns
+  [once] ok  fmt 3 n  128 B   8 K  120 : 2E 297446  solve 178720 ns
+  [once] ok  fmt 3 n  160 B  16 K   60 : 2E 403328  solve 220384 ns
+  [ring] 44 replies through 16 persistent workers checked
+SELFTEST PASSED

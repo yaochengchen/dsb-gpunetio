@@ -1,0 +1,22 @@
+init 0x65eb953f62d8e06f
+pass 0 2E -235140 chk 0x03bbb57daff595c4
+pass 1 2E -115552 chk 0xeacc7f105cacc8a3
+pass 2 2E -16638952 chk 0x19512b7d60f7d10c
+pass 3 2E -23413860 chk 0x0dcfa91c945a21d1
+pass 4 2E -23062508 chk 0xafbd1cdb571614d9
+pass 5 2E -25601608 chk 0xbb001a3faeec59ef
+pass 6 2E -27450032 chk 0xcea1d69cfffec9b9
+pass 7 2E -29850740 chk 0x424a4eef2c7544f5
+pass 8 2E -31793428 chk 0xf52dafc12222a6ff
+pass 9 2E -33911592 chk 0x74e8505347cf6c5f
+pass 10 2E -35630324 chk 0x4f05fe0645bac760
+pass 11 2E -37238568 chk 0x2d9b78ca204f73ce
+pass 12 2E -38630936 chk 0x4f9f59b028ca5c97
+pass 13 2E -39791248 chk 0x4ac6bf8bfdad44f6
+pass 14 2E -40745980 chk 0xa437281184fbf791
+pass 15 2E -41542772 chk 0x21282f515f5f837d
+pass 16 2E -42230692 chk 0x3dd32e51acac9f8c
+pass 17 2E -42740524 chk 0x51dcbb3ee3ed02bc
+pass 18 2E -43150196 chk 0x912b48b33fdb3717
+pass 19 2E -43464196 chk 0x9c7be78f4918a7dc
+pass 20 2E -43679036 chk 0x9c7be78f4918a7dc

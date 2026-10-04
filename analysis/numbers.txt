@@ -1,0 +1,218 @@
+[bench] proxy-cpu: 120 configurations reported from bench_pu2_r2.csv (closed-window=4096 drain)
+[bench] persistent-gpu: 120 configurations reported from bench_pu2_r3.csv
+[bench] single-launch: 120 configurations reported from bench_pu2_r3.csv
+[bench] single-roundtrip: 120 configurations reported from bench_pu2_r3.csv
+[bench] single-solve: 120 configurations reported from bench_pu2_r3.csv
+[net] 29 configurations reported from a newer rerun (<series>_r<k>): doca_w2t_r2; doca_w2t_r5; launch_fast_r2; proxy_fast_r2; proxy_fast_r5
+[net] rows in net.csv 291, reported 246
+[net] reported series: diag_w2t, doca, doca_fast, doca_fast_W2, doca_w2, doca_w2t, launch, launch_fast, proxy, proxy_fast
+[bench] configurations measured: 120; solve p50 range 31.3-1885.1 us
+[bench] H2D+launch+D2H minus solve: median 13.0, min 10.0, max 19.3, mean 13.8 us
+[bench] launch-only overhead (event-timed launch minus in-kernel): median 6.0, min 3.7, max 7.2 us
+[bench] configurations where overhead > solve: 0 of 120
+[bench] smallest solves: [(31.33, ('pm1', 64, 1, 50)), (32.19, ('pm1', 128, 1, 50)), (34.53, ('int8', 64, 1, 50))]
+[bench] ('int8', 128, 8, 100): solve 151.74 launch 157.70 roundtrip 163.92 (p99 166.62)
+[bench] ('pm1', 128, 8, 100): solve 108.13 launch 115.14 roundtrip 123.83 (p99 125.87)
+[bench] ('pm1', 64, 1, 50): solve 31.33 launch 37.41 roundtrip 50.12 (p99 52.15)
+[bench] persistent-gpu workers 375; rate range over all configs 164-2030 kreq/s; max 2030; configs at >=1900 kreq/s: 62 of 120
+[bench] proxy-cpu rate range 165-1025 kreq/s
+[bench] REF persistent-gpu 1983033 req/s p50 568.90 p99 667.87; proxy-cpu 657879 req/s p50 6165.16 p99 6732.07; W/t_solve bound 2471 kreq/s
+[bench] achieved / (W/t_solve) when the bound < 1500 kreq/s: 0.73-0.96
+[net unloaded] ('int8', 64, 8, 50) launch: p50 71.71 p99 78.27 p999 144.32 srv 57.58/59.59 net 14.06 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 50) proxy: p50 73.92 p99 80.80 p999 89.02 srv 59.66/64.54 net 14.05 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 50) launch_fast: p50 67.65 p99 70.59 p999 77.98 srv 57.08/59.16 net 10.47 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 50) proxy_fast: p50 70.85 p99 75.59 p999 81.06 srv 60.18/64.54 net 10.58 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 50) doca_w2t: p50 62.05 p99 65.09 p999 72.45 srv 48.70/50.50 net 13.28 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 100) launch: p50 110.37 p99 121.25 p999 205.25 srv 96.40/98.22 net 13.95 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 100) proxy: p50 113.47 p99 208.19 p999 217.19 srv 98.99/103.37 net 14.01 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 100) launch_fast: p50 106.56 p99 108.93 p999 116.45 srv 95.99/97.15 net 10.46 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 100) proxy_fast: p50 109.98 p99 114.53 p999 120.45 srv 99.35/103.43 net 10.56 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 100) doca_w2t: p50 101.60 p99 103.49 p999 112.22 srv 88.32/89.34 net 13.25 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 200) launch: p50 283.11 p99 294.98 p999 311.04 srv 180.34/181.18 net 103.16 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 200) proxy: p50 278.40 p99 292.77 p999 310.66 srv 177.36/181.86 net 100.79 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 200) launch_fast: p50 182.91 p99 192.06 p999 196.22 srv 172.30/180.63 net 10.44 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 200) proxy_fast: p50 188.48 p99 192.87 p999 197.50 srv 177.85/181.89 net 10.53 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 200) doca_w2t: p50 181.38 p99 183.52 p999 191.01 srv 167.68/168.93 net 13.63 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 400) launch: p50 422.02 p99 442.08 p999 456.26 srv 328.08/330.22 net 93.51 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 400) proxy: p50 436.77 p99 449.89 p999 460.29 srv 334.42/338.95 net 102.79 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 400) launch_fast: p50 338.31 p99 341.09 p999 347.78 srv 327.60/329.39 net 10.62 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 400) proxy_fast: p50 345.47 p99 349.99 p999 354.50 srv 334.89/339.07 net 10.46 ok 100000 lost 0
+[net unloaded] ('int8', 64, 8, 400) doca_w2t: p50 340.77 p99 343.84 p999 351.43 srv 326.88/328.83 net 13.73 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 50) launch: p50 109.89 p99 115.27 p999 122.82 srv 94.33/96.07 net 15.49 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 50) proxy: p50 108.55 p99 114.85 p999 121.95 srv 94.02/98.24 net 14.40 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 50) launch_fast: p50 104.54 p99 107.42 p999 115.23 srv 93.96/95.81 net 10.45 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 50) proxy_fast: p50 104.74 p99 109.12 p999 113.28 srv 93.95/97.97 net 10.69 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 50) doca_w2t: p50 95.90 p99 98.14 p999 105.22 srv 82.85/84.19 net 12.99 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 100) launch: p50 183.20 p99 188.35 p999 197.57 srv 167.79/168.76 net 15.50 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 100) proxy: p50 264.77 p99 280.64 p999 300.16 srv 163.92/168.22 net 101.08 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 100) launch_fast: p50 178.50 p99 180.80 p999 184.42 srv 167.76/168.68 net 10.69 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 100) proxy_fast: p50 175.55 p99 180.32 p999 186.53 srv 164.94/169.30 net 10.52 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 100) doca_w2t: p50 166.37 p99 168.16 p999 177.03 srv 152.74/153.98 net 13.51 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 200) launch: p50 407.01 p99 418.91 p999 430.27 srv 303.24/304.71 net 103.77 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 200) proxy: p50 406.50 p99 420.90 p999 433.35 srv 304.63/309.15 net 102.30 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 200) launch_fast: p50 313.76 p99 316.35 p999 324.13 srv 303.10/304.53 net 10.61 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 200) proxy_fast: p50 314.40 p99 319.33 p999 323.71 srv 303.44/307.99 net 10.84 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 200) doca_w2t: p50 307.14 p99 310.40 p999 318.27 srv 293.50/295.52 net 13.54 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 400) launch: p50 680.45 p99 692.16 p999 701.83 srv 575.96/578.27 net 104.13 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 400) proxy: p50 685.63 p99 700.71 p999 711.78 srv 584.36/589.02 net 101.39 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 400) launch_fast: p50 586.53 p99 590.31 p999 595.91 srv 575.81/578.11 net 10.67 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 400) proxy_fast: p50 595.62 p99 600.51 p999 604.16 srv 584.76/589.26 net 10.74 ok 100000 lost 0
+[net unloaded] ('int8', 128, 8, 400) doca_w2t: p50 588.00 p99 590.56 p999 599.97 srv 574.66/576.58 net 13.28 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 50) launch: p50 245.03 p99 259.36 p999 276.80 srv 143.50/145.02 net 101.49 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 50) proxy: p50 245.19 p99 260.35 p999 276.61 srv 144.12/148.71 net 101.16 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 50) launch_fast: p50 154.24 p99 157.60 p999 164.55 srv 143.28/144.76 net 10.93 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 50) proxy_fast: p50 155.17 p99 160.10 p999 165.15 srv 144.12/148.34 net 10.93 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 50) doca_w2t: p50 146.37 p99 149.28 p999 156.77 srv 132.80/134.24 net 13.51 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 100) launch: p50 357.57 p99 371.52 p999 383.55 srv 256.07/257.38 net 101.53 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 100) proxy: p50 364.71 p99 376.99 p999 388.90 srv 260.53/264.93 net 104.54 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 100) launch_fast: p50 266.02 p99 269.95 p999 275.71 srv 254.43/256.99 net 11.01 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 100) proxy_fast: p50 271.52 p99 276.35 p999 281.09 srv 260.54/264.71 net 10.87 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 100) doca_w2t: p50 262.79 p99 265.70 p999 273.89 srv 249.38/250.85 net 13.38 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 200) launch: p50 591.04 p99 602.95 p999 613.54 srv 487.56/489.17 net 103.48 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 200) proxy: p50 595.81 p99 610.08 p999 627.04 srv 493.65/498.34 net 101.95 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 200) launch_fast: p50 498.40 p99 502.18 p999 508.80 srv 487.37/489.60 net 11.02 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 200) proxy_fast: p50 505.03 p99 509.83 p999 513.57 srv 493.85/498.08 net 11.03 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 200) doca_w2t: p50 500.19 p99 504.16 p999 511.11 srv 483.65/486.46 net 16.42 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 400) launch: p50 1051.30 p99 1067.59 p999 1076.84 srv 953.84/955.15 net 99.49 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 400) proxy: p50 1063.30 p99 1077.06 p999 1086.28 srv 960.01/964.68 net 103.45 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 400) launch_fast: p50 958.05 p99 967.94 p999 972.00 srv 946.61/955.00 net 10.97 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 400) proxy_fast: p50 971.11 p99 976.26 p999 981.19 srv 959.91/964.37 net 11.05 ok 100000 lost 0
+[net unloaded] ('int8', 192, 8, 400) doca_w2t: p50 959.81 p99 964.36 p999 971.56 srv 945.95/949.79 net 13.73 ok 100000 lost 0
+[net unloaded] ('pm1', 64, 8, 100) launch: p50 108.29 p99 174.24 p999 200.71 srv 94.26/95.11 net 14.04 ok 100000 lost 0
+[net unloaded] ('pm1', 64, 8, 100) proxy: p50 103.20 p99 109.38 p999 118.91 srv 89.05/92.97 net 13.97 ok 100000 lost 0
+[net unloaded] ('pm1', 64, 8, 100) launch_fast: p50 104.42 p99 107.20 p999 114.24 srv 93.89/94.97 net 10.47 ok 100000 lost 0
+[net unloaded] ('pm1', 64, 8, 100) proxy_fast: p50 100.00 p99 104.26 p999 108.00 srv 89.42/93.24 net 10.50 ok 100000 lost 0
+[net unloaded] ('pm1', 64, 8, 100) doca_w2t: p50 92.13 p99 94.69 p999 101.60 srv 78.72/80.42 net 13.34 ok 100000 lost 0
+[net unloaded] ('pm1', 128, 8, 100) launch: p50 217.09 p99 234.27 p999 252.26 srv 118.92/120.53 net 98.09 ok 100000 lost 0
+[net unloaded] ('pm1', 128, 8, 100) proxy: p50 220.90 p99 236.77 p999 249.54 srv 120.15/124.73 net 101.21 ok 100000 lost 0
+[net unloaded] ('pm1', 128, 8, 100) launch_fast: p50 129.44 p99 132.54 p999 139.17 srv 118.76/120.30 net 10.59 ok 100000 lost 0
+[net unloaded] ('pm1', 128, 8, 100) proxy_fast: p50 130.59 p99 135.04 p999 138.56 srv 119.75/123.67 net 10.74 ok 100000 lost 0
+[net unloaded] ('pm1', 128, 8, 100) doca_w2t: p50 124.61 p99 130.05 p999 136.19 srv 109.09/113.82 net 15.33 ok 100000 lost 0
+[net unloaded] ('pm1', 256, 8, 100) launch: p50 305.95 p99 320.29 p999 334.69 srv 204.94/206.12 net 101.07 ok 100000 lost 0
+[net unloaded] ('pm1', 256, 8, 100) proxy: p50 304.55 p99 320.58 p999 331.46 srv 204.26/208.79 net 100.77 ok 100000 lost 0
+[net unloaded] ('pm1', 256, 8, 100) launch_fast: p50 215.68 p99 219.04 p999 223.30 srv 204.74/206.11 net 10.91 ok 100000 lost 0
+[net unloaded] ('pm1', 256, 8, 100) proxy_fast: p50 215.33 p99 220.06 p999 224.80 srv 204.24/208.32 net 10.97 ok 100000 lost 0
+[net unloaded] ('pm1', 256, 8, 100) doca_w2t: p50 206.78 p99 210.47 p999 217.70 srv 192.99/195.36 net 13.70 ok 100000 lost 0
+[net unloaded] ('pm1', 512, 8, 100) launch: p50 541.09 p99 555.81 p999 565.86 srv 439.97/441.37 net 101.69 ok 100000 lost 0
+[net unloaded] ('pm1', 512, 8, 100) proxy: p50 527.78 p99 550.21 p999 559.30 srv 426.32/440.90 net 102.18 ok 100000 lost 0
+[net unloaded] ('pm1', 512, 8, 100) launch_fast: p50 450.91 p99 453.89 p999 460.64 srv 439.93/441.28 net 10.98 ok 100000 lost 0
+[net unloaded] ('pm1', 512, 8, 100) proxy_fast: p50 436.96 p99 451.52 p999 454.34 srv 426.01/440.38 net 10.83 ok 100000 lost 0
+[net unloaded] ('pm1', 512, 8, 100) doca_w2t: p50 431.49 p99 447.39 p999 449.12 srv 417.92/433.63 net 13.41 ok 100000 lost 0
+[net unloaded] ('ternary', 256, 8, 100) launch: p50 345.60 p99 358.59 p999 372.38 srv 241.78/242.70 net 103.84 ok 100000 lost 0
+[net unloaded] ('ternary', 256, 8, 100) proxy: p50 346.47 p99 363.14 p999 375.26 srv 245.19/252.09 net 101.67 ok 100000 lost 0
+[net unloaded] ('ternary', 256, 8, 100) launch_fast: p50 252.67 p99 256.19 p999 261.44 srv 241.59/242.86 net 11.10 ok 100000 lost 0
+[net unloaded] ('ternary', 256, 8, 100) proxy_fast: p50 256.26 p99 263.30 p999 267.30 srv 245.16/251.76 net 10.90 ok 100000 lost 0
+[net unloaded] ('ternary', 256, 8, 100) doca_w2t: p50 249.57 p99 255.49 p999 260.99 srv 235.20/240.64 net 13.89 ok 100000 lost 0
+[net unloaded] ('int8', 128, 1, 100) launch: p50 96.90 p99 102.18 p999 112.58 srv 82.02/82.88 net 14.88 ok 100000 lost 0
+[net unloaded] ('int8', 128, 1, 100) proxy: p50 94.08 p99 100.22 p999 110.05 srv 79.32/83.36 net 14.55 ok 100000 lost 0
+[net unloaded] ('int8', 128, 1, 100) launch_fast: p50 92.64 p99 95.84 p999 100.16 srv 81.92/83.51 net 10.71 ok 100000 lost 0
+[net unloaded] ('int8', 128, 1, 100) proxy_fast: p50 90.18 p99 94.62 p999 99.36 srv 79.51/83.51 net 10.62 ok 100000 lost 0
+[net unloaded] ('int8', 128, 1, 100) doca_w2t: p50 82.85 p99 86.78 p999 93.02 srv 68.77/71.65 net 13.95 ok 100000 lost 0
+[net unloaded] ('int8', 128, 32, 100) launch: p50 601.67 p99 615.43 p999 625.67 srv 499.82/501.34 net 101.87 ok 100000 lost 0
+[net unloaded] ('int8', 128, 32, 100) proxy: p50 596.19 p99 626.40 p999 634.98 srv 495.08/517.40 net 102.67 ok 100000 lost 0
+[net unloaded] ('int8', 128, 32, 100) launch_fast: p50 510.47 p99 513.35 p999 520.64 srv 499.73/501.04 net 10.72 ok 100000 lost 0
+[net unloaded] ('int8', 128, 32, 100) proxy_fast: p50 507.01 p99 529.25 p999 533.57 srv 496.15/518.30 net 10.74 ok 100000 lost 0
+[net unloaded] ('int8', 128, 32, 100) doca_w2t: p50 500.39 p99 525.92 p999 535.72 srv 485.79/508.96 net 13.70 ok 100000 lost 0
+[net] GPUNetIO RTT-server p50 over the 19 unloaded configs: min 13.0 median 13.5 max 16.4
+[net] baseline runs in the fast state (rest < 40 us): 49: launch ('int8', 64, 8, 50) srv 58 rest 14.1; proxy ('int8', 64, 8, 50) srv 60 rest 14.1; launch_fast ('int8', 64, 8, 50) srv 57 rest 10.5; proxy_fast ('int8', 64, 8, 50) srv 60 rest 10.6; launch ('int8', 64, 8, 100) srv 96 rest 13.9; proxy ('int8', 64, 8, 100) srv 99 rest 14.0; launch_fast ('int8', 64, 8, 100) srv 96 rest 10.5; proxy_fast ('int8', 64, 8, 100) srv 99 rest 10.6; launch_fast ('int8', 64, 8, 200) srv 172 rest 10.4; proxy_fast ('int8', 64, 8, 200) srv 178 rest 10.5; launch_fast ('int8', 64, 8, 400) srv 328 rest 10.6; proxy_fast ('int8', 64, 8, 400) srv 335 rest 10.5; launch ('int8', 128, 8, 50) srv 94 rest 15.5; proxy ('int8', 128, 8, 50) srv 94 rest 14.4; launch_fast ('int8', 128, 8, 50) srv 94 rest 10.4; proxy_fast ('int8', 128, 8, 50) srv 94 rest 10.7; launch ('int8', 128, 8, 100) srv 168 rest 15.5; launch_fast ('int8', 128, 8, 100) srv 168 rest 10.7; proxy_fast ('int8', 128, 8, 100) srv 165 rest 10.5; launch_fast ('int8', 128, 8, 200) srv 303 rest 10.6; proxy_fast ('int8', 128, 8, 200) srv 303 rest 10.8; launch_fast ('int8', 128, 8, 400) srv 576 rest 10.7; proxy_fast ('int8', 128, 8, 400) srv 585 rest 10.7; launch_fast ('int8', 192, 8, 50) srv 143 rest 10.9; proxy_fast ('int8', 192, 8, 50) srv 144 rest 10.9; launch_fast ('int8', 192, 8, 100) srv 254 rest 11.0; proxy_fast ('int8', 192, 8, 100) srv 261 rest 10.9; launch_fast ('int8', 192, 8, 200) srv 487 rest 11.0; proxy_fast ('int8', 192, 8, 200) srv 494 rest 11.0; launch_fast ('int8', 192, 8, 400) srv 947 rest 11.0; proxy_fast ('int8', 192, 8, 400) srv 960 rest 11.1; launch ('int8', 128, 1, 100) srv 82 rest 14.9; proxy ('int8', 128, 1, 100) srv 79 rest 14.6; launch_fast ('int8', 128, 1, 100) srv 82 rest 10.7; proxy_fast ('int8', 128, 1, 100) srv 80 rest 10.6; launch_fast ('int8', 128, 32, 100) srv 500 rest 10.7; proxy_fast ('int8', 128, 32, 100) srv 496 rest 10.7; launch ('pm1', 64, 8, 100) srv 94 rest 14.0; proxy ('pm1', 64, 8, 100) srv 89 rest 14.0; launch_fast ('pm1', 64, 8, 100) srv 94 rest 10.5; proxy_fast ('pm1', 64, 8, 100) srv 89 rest 10.5; launch_fast ('pm1', 128, 8, 100) srv 119 rest 10.6; proxy_fast ('pm1', 128, 8, 100) srv 120 rest 10.7; launch_fast ('pm1', 256, 8, 100) srv 205 rest 10.9; proxy_fast ('pm1', 256, 8, 100) srv 204 rest 11.0; launch_fast ('pm1', 512, 8, 100) srv 440 rest 11.0; proxy_fast ('pm1', 512, 8, 100) srv 426 rest 10.8; launch_fast ('ternary', 256, 8, 100) srv 242 rest 11.1; proxy_fast ('ternary', 256, 8, 100) srv 245 rest 10.9
+[net] baseline runs in the slow state: 27; rest median 101.7 range 93.5-104.5; server residence range 119-960
+[net] fast-state server residence max 960 us
+[net] residence(launch) - residence(doca_w2t), p50, over configs: median 9.8 min 1.2 max 22.1
+[net] rest(launch) p50 over configs: min 13.9 median 101.1 max 104.1
+[net] residence(proxy) - residence(doca_w2t), p50, over configs: median 10.7 min 7.5 max 14.1
+[net] rest(proxy) p50 over configs: min 14.0 median 101.2 max 104.5
+[net] residence(launch_fast) - residence(doca_w2t), p50, over configs: median 9.6 min 0.7 max 22.0
+[net] rest(launch_fast) p50 over configs: min 10.4 median 10.7 max 11.1
+[net] residence(proxy_fast) - residence(doca_w2t), p50, over configs: median 10.7 min 8.0 max 14.0
+[net] rest(proxy_fast) p50 over configs: min 10.5 median 10.7 max 11.1
+[net] doca_w2t p50 - min(launch_fast, proxy_fast) p50: faster in 15/19; ('int8', 128, 8, 100) -9.2; ('int8', 128, 8, 50) -8.6; ('pm1', 256, 8, 100) -8.6; ('int8', 192, 8, 50) -7.9; ('pm1', 64, 8, 100) -7.9; ('int8', 128, 1, 100) -7.3; ('int8', 128, 8, 200) -6.6; ('int8', 128, 32, 100) -6.6; ('int8', 64, 8, 50) -5.6; ('pm1', 512, 8, 100) -5.5; ('int8', 64, 8, 100) -5.0; ('pm1', 128, 8, 100) -4.8; ('int8', 192, 8, 100) -3.2; ('ternary', 256, 8, 100) -3.1; ('int8', 64, 8, 200) -1.5; ('int8', 128, 8, 400) +1.5; ('int8', 192, 8, 400) +1.8; ('int8', 192, 8, 200) +1.8; ('int8', 64, 8, 400) +2.5
+[ratio] by GPUNetIO server residence: 49us L1.16 P1.19 Lf1.09 Pf1.14 ('int8', 64, 8, 50); 69us L1.17 P1.14 Lf1.12 Pf1.09 ('int8', 128, 1, 100); 79us L1.18 P1.12 Lf1.13 Pf1.09 ('pm1', 64, 8, 100); 83us L1.15 P1.13 Lf1.09 Pf1.09 ('int8', 128, 8, 50); 88us L1.09 P1.12 Lf1.05 Pf1.08 ('int8', 64, 8, 100); 109us L1.74 P1.77 Lf1.04 Pf1.05 ('pm1', 128, 8, 100); 133us L1.67 P1.68 Lf1.05 Pf1.06 ('int8', 192, 8, 50); 153us L1.10 P1.59 Lf1.07 Pf1.06 ('int8', 128, 8, 100); 168us L1.56 P1.53 Lf1.01 Pf1.04 ('int8', 64, 8, 200); 193us L1.48 P1.47 Lf1.04 Pf1.04 ('pm1', 256, 8, 100); 235us L1.38 P1.39 Lf1.01 Pf1.03 ('ternary', 256, 8, 100); 249us L1.36 P1.39 Lf1.01 Pf1.03 ('int8', 192, 8, 100); 294us L1.33 P1.32 Lf1.02 Pf1.02 ('int8', 128, 8, 200); 327us L1.24 P1.28 Lf0.99 Pf1.01 ('int8', 64, 8, 400); 418us L1.25 P1.22 Lf1.05 Pf1.01 ('pm1', 512, 8, 100); 484us L1.18 P1.19 Lf1.00 Pf1.01 ('int8', 192, 8, 200); 486us L1.20 P1.19 Lf1.02 Pf1.01 ('int8', 128, 32, 100); 575us L1.16 P1.17 Lf1.00 Pf1.01 ('int8', 128, 8, 400); 946us L1.10 P1.11 Lf1.00 Pf1.01 ('int8', 192, 8, 400)
+[ratio] launch/doca p50 max 1.74 at ('pm1', 128, 8, 100); proxy/doca p50 max 1.77 at ('pm1', 128, 8, 100)
+[ratio] tuned host: launch_fast/doca and proxy_fast/doca p50 range 0.993-1.142
+[load] launch offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 161.05/174.35 rtt 249.76/425.79/549.60 rest 88.63
+[load] launch offered 50000 achieved 24.1 ok 48196 lost 51804 (51.8%) srv 162.02/166.15 rtt 11844.43/12397.11/12507.48 rest 11683.28
+[load] launch offered 100000 achieved 23.9 ok 24031 lost 75969 (76.0%) srv 162.11/166.61 rtt 11983.95/12352.34/12433.78 rest 11822.26
+[load] launch offered 200000 achieved 23.6 ok 12000 lost 88000 (88.0%) srv 162.18/166.52 rtt 11918.38/12185.39/12246.83 rest 11757.40
+[load] launch offered 400000 achieved 23.0 ok 5982 lost 94018 (94.0%) srv 162.28/166.72 rtt 11887.06/12099.12/12131.73 rest 11725.93
+[load] launch offered 800000 achieved 22.5 ok 3949 lost 96051 (96.1%) srv 162.84/167.39 rtt 11898.77/12124.18/12152.05 rest 11736.00
+[load] proxy offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 163.17/188.92 rtt 180.42/387.75/501.67 rest 16.05
+[load] proxy offered 50000 achieved 50.2 ok 100000 lost 0 (0.0%) srv 175.10/220.29 rtt 592.51/1479.11/1631.88 rest 410.85
+[load] proxy offered 100000 achieved 100.5 ok 100000 lost 0 (0.0%) srv 177.97/224.80 rtt 587.20/1072.84/1181.57 rest 403.19
+[load] proxy offered 200000 achieved 200.9 ok 100000 lost 0 (0.0%) srv 185.38/237.63 rtt 474.50/742.79/794.98 rest 283.80
+[load] proxy offered 400000 achieved 401.5 ok 100000 lost 0 (0.0%) srv 208.45/290.77 rtt 481.44/636.93/691.24 rest 268.14
+[load] proxy offered 800000 achieved 499.2 ok 72471 lost 27529 (27.5%) srv 334.79/494.13 rtt 959.11/1169.19/1205.00 rest 635.74
+[load] launch_fast offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 160.88/169.97 rtt 172.29/264.10/315.68 rest 10.80
+[load] launch_fast offered 50000 achieved 24.3 ok 48720 lost 51280 (51.3%) srv 161.61/165.04 rtt 11467.25/11589.94/11600.40 rest 11305.63
+[load] launch_fast offered 100000 achieved 24.2 ok 24334 lost 75666 (75.7%) srv 161.75/165.20 rtt 11504.05/11608.69/11618.84 rest 11342.89
+[load] launch_fast offered 200000 achieved 23.9 ok 12160 lost 87840 (87.8%) srv 161.72/165.72 rtt 11544.76/11617.56/11621.68 rest 11382.97
+[load] launch_fast offered 400000 achieved 23.4 ok 6076 lost 93924 (93.9%) srv 161.77/165.57 rtt 11585.30/11629.43/11635.80 rest 11422.70
+[load] launch_fast offered 800000 achieved 22.8 ok 3864 lost 96136 (96.1%) srv 161.83/165.70 rtt 11598.45/11646.00/11650.07 rest 11437.68
+[load] proxy_fast offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 162.93/176.66 rtt 173.63/188.06/201.38 rest 10.57
+[load] proxy_fast offered 50000 achieved 50.3 ok 100000 lost 0 (0.0%) srv 161.59/185.94 rtt 172.86/197.25/204.45 rest 11.01
+[load] proxy_fast offered 100000 achieved 100.5 ok 100000 lost 0 (0.0%) srv 162.23/188.29 rtt 174.18/200.51/207.20 rest 11.68
+[load] proxy_fast offered 200000 achieved 201.0 ok 100000 lost 0 (0.0%) srv 164.46/193.33 rtt 178.43/208.10/215.20 rest 13.57
+[load] proxy_fast offered 400000 achieved 401.80 ok 100000 lost 0 (0.0%) srv 173.38/207.61 rtt 192.57/228.96/242.28 rest 18.56
+[load] proxy_fast offered 600000 achieved 602.40 ok 100000 lost 0 (0.0%) srv 207.01/264.42 rtt 239.75/326.98/362.95 rest 31.26
+[load] proxy_fast offered 700000 achieved 627.90 ok 100000 lost 0 (0.0%) srv 222.07/287.38 rtt 263.17/381.19/613.96 rest 39.40
+[load] proxy_fast offered 800000 achieved 641.65 ok 100000 lost 0 (0.0%) srv 235.16/316.79 rtt 288.30/608.53/699.05 rest 47.62
+[load] doca_w2t offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 153.44/156.80 rtt 166.72/171.17/178.27 rest 13.22
+[load] doca_w2t offered 50000 achieved 50.3 ok 100000 lost 0 (0.0%) srv 153.12/166.56 rtt 166.47/180.80/195.62 rest 13.34
+[load] doca_w2t offered 100000 achieved 100.5 ok 100000 lost 0 (0.0%) srv 153.34/178.24 rtt 167.68/193.03/200.13 rest 14.11
+[load] doca_w2t offered 200000 achieved 201.0 ok 100000 lost 0 (0.0%) srv 154.37/178.69 rtt 170.88/195.65/202.40 rest 16.00
+[load] doca_w2t offered 400000 achieved 401.90 ok 100000 lost 0 (0.0%) srv 156.24/183.60 rtt 177.81/206.96/213.73 rest 20.91
+[load] doca_w2t offered 600000 achieved 602.50 ok 100000 lost 0 (0.0%) srv 158.98/186.14 rtt 188.13/215.78/235.30 rest 28.29
+[load] doca_w2t offered 700000 achieved 628.20 ok 100000 lost 0 (0.0%) srv 159.02/185.71 rtt 188.80/423.47/508.32 rest 29.45
+[load] doca_w2t offered 800000 achieved 622.45 ok 100000 lost 0 (0.0%) srv 158.66/180.05 rtt 188.59/217.94/222.85 rest 29.28
+[load] doca_fast offered 10000 achieved 10.1 ok 100000 lost 0 (0.0%) srv 153.38/160.61 rtt 169.06/176.90/195.30 rest 15.91
+[load] doca_fast offered 50000 achieved 50.3 ok 100000 lost 0 (0.0%) srv 152.86/177.66 rtt 169.47/194.59/203.68 rest 16.48
+[load] doca_fast offered 100000 achieved 100.5 ok 100000 lost 0 (0.0%) srv 153.38/180.54 rtt 171.42/199.01/206.66 rest 17.34
+[load] doca_fast offered 200000 achieved 201.0 ok 100000 lost 0 (0.0%) srv 157.28/185.98 rtt 178.15/209.12/218.78 rest 20.26
+[load] doca_fast offered 400000 achieved 401.5 ok 100000 lost 0 (0.0%) srv 249.89/484.93 rtt 311.49/536.99/564.58 rest 58.56
+[load] doca_fast offered 800000 achieved 333.7 ok 59060 lost 40940 (40.9%) srv 23323.36/24793.15 rtt 24307.49/25902.03/25946.57 rest 1037.87
+[window] launch w=1 kreq/s 5.5 srv 167.79/168.76 rtt 183.20/188.35/197.57 rest 15.50
+[window] launch w=4 kreq/s 21.4 srv 161.33/169.75 rtt 178.56/278.72/324.13 rest 15.68
+[window] launch w=16 kreq/s 24.0 srv 162.57/166.53 rtt 666.95/765.00/772.58 rest 505.14
+[window] launch w=64 kreq/s 24.1 srv 162.41/166.44 rtt 2658.73/2760.08/2772.72 rest 2497.12
+[window] proxy w=1 kreq/s 3.8 srv 163.92/168.22 rtt 264.77/280.64/300.16 rest 101.08
+[window] proxy w=4 kreq/s 20.4 srv 163.38/171.95 rtt 178.88/293.50/322.27 rest 15.20
+[window] proxy w=16 kreq/s 66.6 srv 167.42/198.19 rtt 237.06/349.51/440.58 rest 67.46
+[window] proxy w=64 kreq/s 160.0 srv 175.38/223.64 rtt 416.07/548.13/619.27 rest 237.14
+[window] launch_fast w=1 kreq/s 5.7 srv 167.76/168.68 rtt 178.50/180.80/184.42 rest 10.69
+[window] launch_fast w=4 kreq/s 22.7 srv 161.97/170.18 rtt 175.87/184.83/190.21 rest 11.30
+[window] launch_fast w=16 kreq/s 24.4 srv 161.96/165.56 rtt 654.31/661.89/665.70 rest 492.49
+[window] launch_fast w=64 kreq/s 24.4 srv 161.96/165.72 rtt 2618.32/2629.48/2635.18 rest 2456.49
+[window] proxy_fast w=1 kreq/s 5.7 srv 164.94/169.30 rtt 175.55/180.32/186.53 rest 10.52
+[window] proxy_fast w=4 kreq/s 22.9 srv 163.23/168.19 rtt 174.02/180.00/193.99 rest 10.66
+[window] proxy_fast w=16 kreq/s 91.3 srv 162.48/182.76 rtt 174.15/194.56/204.32 rest 11.48
+[window] proxy_fast w=64 kreq/s 339.1 srv 168.85/198.12 rtt 185.66/215.65/223.91 rest 16.66
+[window] doca_w2t w=1 kreq/s 6.0 srv 152.74/153.98 rtt 166.37/168.16/177.03 rest 13.51
+[window] doca_w2t w=4 kreq/s 23.9 srv 153.41/156.03 rtt 167.20/170.18/178.11 rest 13.73
+[window] doca_w2t w=16 kreq/s 95.4 srv 153.06/174.37 rtt 166.91/188.54/196.19 rest 13.79
+[window] doca_w2t w=64 kreq/s 363.1 srv 155.20/178.94 rtt 174.53/198.78/205.38 rest 19.20
+[window] doca_fast w=1 kreq/s 5.9 srv 152.93/154.30 rtt 168.58/172.42/178.21 rest 15.68
+[window] doca_fast w=4 kreq/s 23.6 srv 153.28/154.66 rtt 169.15/173.66/187.30 rest 15.87
+[window] doca_fast w=16 kreq/s 94.2 srv 152.58/171.74 rtt 169.12/188.64/198.98 rest 16.64
+[window] doca_fast w=64 kreq/s 326.5 srv 165.82/195.74 rtt 191.36/221.50/268.55 rest 26.30
+[repeats] excluded (lost replies): doca_w2t_r4 offered 700000 ok 98879 lost 1121 rtt p50 20575.93 p99 31733.74 srv p50 162.94
+[repeats] doca_w2t offered 400000: 4 runs (doca_w2t_r2, doca_w2t_r3, doca_w2t_r4, doca_w2t_r5); achieved 401.8--401.9 kreq/s; rtt p50 176.9--178.8 (median 177.8) p99 203.8--208.6 (median 207.0) p99.9 213.0--214.1 (median 213.7)
+[repeats] doca_w2t offered 600000: 3 runs (doca_w2t_r3, doca_w2t_r4, doca_w2t_r5); achieved 602.4--602.5 kreq/s; rtt p50 187.0--188.3 (median 188.1) p99 215.7--320.6 (median 215.8) p99.9 220.2--531.4 (median 235.3)
+[repeats] doca_w2t offered 700000: 2 runs (doca_w2t_r3, doca_w2t_r5); achieved 623.0--633.4 kreq/s; rtt p50 187.7--189.9 (median 188.8) p99 206.3--640.7 (median 423.5) p99.9 216.3--800.3 (median 508.3)
+[repeats] doca_w2t offered 800000: 4 runs (doca_w2t_r2, doca_w2t_r3, doca_w2t_r4, doca_w2t_r5); achieved 617.8--628.3 kreq/s; rtt p50 186.9--189.3 (median 188.6) p99 195.1--3127.3 (median 217.9) p99.9 199.1--3325.8 (median 222.8)
+[repeats] proxy_fast offered 400000: 4 runs (proxy_fast_r2, proxy_fast_r3, proxy_fast_r4, proxy_fast_r5); achieved 401.8 kreq/s; rtt p50 191.1--194.4 (median 192.6) p99 225.5--231.7 (median 229.0) p99.9 236.3--246.7 (median 242.3)
+[repeats] proxy_fast offered 600000: 3 runs (proxy_fast_r3, proxy_fast_r4, proxy_fast_r5); achieved 601.9--602.4 kreq/s; rtt p50 236.2--246.5 (median 239.8) p99 313.1--347.3 (median 327.0) p99.9 353.1--491.2 (median 362.9)
+[repeats] proxy_fast offered 700000: 3 runs (proxy_fast_r3, proxy_fast_r4, proxy_fast_r5); achieved 616.7--645.6 kreq/s; rtt p50 262.3--285.6 (median 263.2) p99 354.3--1426.6 (median 381.2) p99.9 386.8--1598.4 (median 614.0)
+[repeats] proxy_fast offered 800000: 4 runs (proxy_fast_r2, proxy_fast_r3, proxy_fast_r4, proxy_fast_r5); achieved 619.7--668.4 kreq/s; rtt p50 238.8--313.8 (median 288.3) p99 407.9--875.7 (median 608.5) p99.9 443.2--1031.9 (median 699.1)
+[repeats] median p50_us at offered 400000: doca_w2t 177.8, proxy_fast 192.6, ratio 1.08
+[repeats] median p99_us at offered 400000: doca_w2t 207.0, proxy_fast 229.0, ratio 1.11
+[repeats] median p50_us at offered 600000: doca_w2t 188.1, proxy_fast 239.8, ratio 1.27
+[repeats] median p99_us at offered 600000: doca_w2t 215.8, proxy_fast 327.0, ratio 1.52
+[repeats] median p50_us at offered 700000: doca_w2t 188.8, proxy_fast 263.2, ratio 1.39
+[repeats] median p99_us at offered 700000: doca_w2t 423.5, proxy_fast 381.2, ratio 0.90
+[repeats] median p50_us at offered 800000: doca_w2t 188.6, proxy_fast 288.3, ratio 1.53
+[repeats] median p99_us at offered 800000: doca_w2t 217.9, proxy_fast 608.5, ratio 2.79
+[breakdown] launch: queue p50 0.00 p99 0.00 mean 0.00; solve p50 151.68 p99 152.00 mean 151.64; io p50 16.13 p99 17.03 mean 14.40; rest p50 15.50 p99 20.48 mean 15.88; rtt p50 183.20 p99 188.35 mean 181.91; rest<40us 99947 of 100000 (99.9%)
+[breakdown] proxy: queue p50 0.00 p99 0.00 mean 0.00; solve p50 152.58 p99 155.01 mean 152.60; io p50 11.33 p99 14.83 mean 11.38; rest p50 101.08 p99 115.89 mean 96.28; rtt p50 264.77 p99 280.64 mean 260.27; rest<40us 5065 of 100000 (5.1%)
+[breakdown] launch_fast: queue p50 0.00 p99 0.00 mean 0.00; solve p50 151.68 p99 152.00 mean 151.63; io p50 16.08 p99 16.98 mean 13.85; rest p50 10.69 p99 12.58 mean 10.82; rtt p50 178.50 p99 180.80 mean 176.30; rest<40us 99998 of 100000 (100.0%)
+[breakdown] proxy_fast: queue p50 0.00 p99 0.00 mean 0.00; solve p50 152.93 p99 155.42 mean 152.97; io p50 11.99 p99 15.48 mean 12.03; rest p50 10.52 p99 12.54 mean 10.65; rtt p50 175.55 p99 180.32 mean 175.65; rest<40us 99998 of 100000 (100.0%)
+[breakdown] doca_w2t: queue p50 2.02 p99 2.14 mean 2.02; solve p50 149.89 p99 151.07 mean 149.87; io p50 0.80 p99 1.98 mean 0.85; rest p50 13.51 p99 15.71 mean 13.67; rtt p50 166.37 p99 168.16 mean 166.40; rest<40us 99996 of 100000 (100.0%)
+[verify] runs with a verify line: 291; energies 850874/850874; trajectories 5820/5820

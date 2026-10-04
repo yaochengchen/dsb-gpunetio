@@ -1,0 +1,4 @@
+init 0x034eaa52480fc1d2
+pass 0 2E -1742336 chk 0xdd9ffae494acf707
+pass 1 2E -999999000000 chk 0xdd9ffae494acf707
+pass 2 2E -999999000000 chk 0xdd9ffae494acf707

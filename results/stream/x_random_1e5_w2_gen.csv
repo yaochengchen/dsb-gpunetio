@@ -1,0 +1,3 @@
+t_s,pass_acked,frames_sent,payload_gbps,wait_ring_frac,wait_ack_frac,tx_errors
+1.000,19,7863168,253.619,0.0000,0.1164,0
+2.000,21,8400000,17.315,0.0000,0.0123,0

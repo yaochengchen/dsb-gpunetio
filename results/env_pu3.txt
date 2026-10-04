@@ -1,0 +1,31 @@
+7.0.0-1019-nvidia-64k
+driver: mlx5_core
+version: 26.04-0.8.6
+firmware-version: 28.43.8002 (MT_0000000838)
+expansion-rom-version: 
+bus-info: 0002:01:00.0
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: yes
+Architecture:                            aarch64
+CPU op-mode(s):                          64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  144
+On-line CPU(s) list:                     0-143
+Vendor ID:                               ARM
+Model name:                              Neoverse-V2
+Model:                                   0
+Thread(s) per core:                      1
+Core(s) per socket:                      72
+Socket(s):                               2
+Stepping:                                r0p0
+Frequency boost:                         disabled
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             3384.0000
+CPU min MHz:                             81.0000
+BogoMIPS:                                2000.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm sb paca pacg dcpodp sve2 sveaes svepmull svebitperm svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 dgh bti
+L1d cache:                               9 MiB (144 instances)
+L1i cache:                               9 MiB (144 instances)

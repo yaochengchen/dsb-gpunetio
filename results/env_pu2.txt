@@ -1,0 +1,16 @@
+Driver Version                                         : 595.58.03
+CUDA Version                                           : 13.2
+    Product Name                                       : NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+5.14.0-570.62.1.el9_6.x86_64
+driver: mlx5_core
+version: 26.04-0.8.6
+firmware-version: 28.48.1000 (MT_0000000838)
+expansion-rom-version: 
+bus-info: 0000:bd:00.0
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: yes
+OFED-internal-26.04-0.8.6:
+-bash: dpkg: command not found
