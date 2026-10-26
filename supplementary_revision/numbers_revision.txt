@@ -1,0 +1,141 @@
+[load ('int8', 128, 8, 100)] doca_w2t offered 10000: runs 1 (doca_w2t); achieved 10.1 (10.1-10.1) kreq/s; lost 0 (0.0%); rtt p50 166.7 (166.7-166.7) p99 171.2 (171.2-171.2); srv p50 153.4 p99 156.8; rtt-srv p50 13.2
+[load ('int8', 128, 8, 100)] doca_w2t offered 50000: runs 1 (doca_w2t); achieved 50.3 (50.3-50.3) kreq/s; lost 0 (0.0%); rtt p50 166.5 (166.5-166.5) p99 180.8 (180.8-180.8); srv p50 153.1 p99 166.6; rtt-srv p50 13.3
+[load ('int8', 128, 8, 100)] doca_w2t offered 100000: runs 1 (doca_w2t); achieved 100.5 (100.5-100.5) kreq/s; lost 0 (0.0%); rtt p50 167.7 (167.7-167.7) p99 193.0 (193.0-193.0); srv p50 153.3 p99 178.2; rtt-srv p50 14.1
+[load ('int8', 128, 8, 100)] doca_w2t offered 200000: runs 1 (doca_w2t); achieved 201.0 (201.0-201.0) kreq/s; lost 0 (0.0%); rtt p50 170.9 (170.9-170.9) p99 195.7 (195.7-195.7); srv p50 154.4 p99 178.7; rtt-srv p50 16.0
+[load ('int8', 128, 8, 100)] doca_w2t offered 400000: runs 4 (doca_w2t_r2,doca_w2t_r3,doca_w2t_r4,doca_w2t_r5); achieved 401.9 (401.8-401.9) kreq/s; lost 0 (0.0%); rtt p50 177.8 (176.9-178.8) p99 207.0 (203.8-208.6); srv p50 156.2 p99 183.6; rtt-srv p50 20.9
+[load ('int8', 128, 8, 100)] doca_w2t offered 600000: runs 3 (doca_w2t_r3,doca_w2t_r4,doca_w2t_r5); achieved 602.5 (602.4-602.5) kreq/s; lost 0 (0.0%); rtt p50 188.1 (187.0-188.3) p99 215.8 (215.7-320.6); srv p50 159.0 p99 186.1; rtt-srv p50 28.3
+[load ('int8', 128, 8, 100)] doca_w2t offered 700000: runs 2 (doca_w2t_r3,doca_w2t_r5); achieved 628.2 (623.0-633.4) kreq/s; lost 0 (0.0%); rtt p50 188.8 (187.7-189.9) p99 423.5 (206.3-640.7); srv p50 159.0 p99 185.7; rtt-srv p50 29.5
+[load ('int8', 128, 8, 100)] doca_w2t offered 800000: runs 4 (doca_w2t_r2,doca_w2t_r3,doca_w2t_r4,doca_w2t_r5); achieved 622.5 (617.8-628.3) kreq/s; lost 0 (0.0%); rtt p50 188.6 (186.9-189.3) p99 217.9 (195.1-3127.3); srv p50 158.7 p99 180.1; rtt-srv p50 29.3
+[load ('int8', 128, 8, 100)] proxy_fast offered 10000: runs 1 (proxy_fast); achieved 10.1 (10.1-10.1) kreq/s; lost 0 (0.0%); rtt p50 173.6 (173.6-173.6) p99 188.1 (188.1-188.1); srv p50 162.9 p99 176.7; rtt-srv p50 10.6
+[load ('int8', 128, 8, 100)] proxy_fast offered 50000: runs 1 (proxy_fast); achieved 50.3 (50.3-50.3) kreq/s; lost 0 (0.0%); rtt p50 172.9 (172.9-172.9) p99 197.2 (197.2-197.2); srv p50 161.6 p99 185.9; rtt-srv p50 11.0
+[load ('int8', 128, 8, 100)] proxy_fast offered 100000: runs 1 (proxy_fast); achieved 100.5 (100.5-100.5) kreq/s; lost 0 (0.0%); rtt p50 174.2 (174.2-174.2) p99 200.5 (200.5-200.5); srv p50 162.2 p99 188.3; rtt-srv p50 11.7
+[load ('int8', 128, 8, 100)] proxy_fast offered 200000: runs 1 (proxy_fast); achieved 201.0 (201.0-201.0) kreq/s; lost 0 (0.0%); rtt p50 178.4 (178.4-178.4) p99 208.1 (208.1-208.1); srv p50 164.5 p99 193.3; rtt-srv p50 13.6
+[load ('int8', 128, 8, 100)] proxy_fast offered 400000: runs 4 (proxy_fast_r2,proxy_fast_r3,proxy_fast_r4,proxy_fast_r5); achieved 401.8 (401.8-401.8) kreq/s; lost 0 (0.0%); rtt p50 192.6 (191.1-194.4) p99 229.0 (225.5-231.7); srv p50 173.4 p99 207.6; rtt-srv p50 18.6
+[load ('int8', 128, 8, 100)] proxy_fast offered 600000: runs 3 (proxy_fast_r3,proxy_fast_r4,proxy_fast_r5); achieved 602.4 (601.9-602.4) kreq/s; lost 0 (0.0%); rtt p50 239.8 (236.2-246.5) p99 327.0 (313.1-347.3); srv p50 207.0 p99 264.4; rtt-srv p50 31.3
+[load ('int8', 128, 8, 100)] proxy_fast offered 700000: runs 3 (proxy_fast_r3,proxy_fast_r4,proxy_fast_r5); achieved 627.9 (616.7-645.6) kreq/s; lost 0 (0.0%); rtt p50 263.2 (262.3-285.6) p99 381.2 (354.3-1426.6); srv p50 222.1 p99 287.4; rtt-srv p50 39.4
+[load ('int8', 128, 8, 100)] proxy_fast offered 800000: runs 4 (proxy_fast_r2,proxy_fast_r3,proxy_fast_r4,proxy_fast_r5); achieved 641.7 (619.7-668.4) kreq/s; lost 0 (0.0%); rtt p50 288.3 (238.8-313.8) p99 608.5 (407.9-875.7); srv p50 235.2 p99 316.8; rtt-srv p50 47.6
+[load ('pm1', 256, 8, 100)] doca_w2t offered 200000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 201.0 (201.0-201.0) kreq/s; lost 0 (0.0%); rtt p50 209.3 (208.6-210.2) p99 224.0 (219.9-225.2); srv p50 192.8 p99 205.5; rtt-srv p50 15.9
+[load ('pm1', 256, 8, 100)] doca_w2t offered 400000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 401.8 (401.8-401.8) kreq/s; lost 0 (0.0%); rtt p50 219.3 (217.2-220.1) p99 236.8 (234.1-237.3); srv p50 197.0 p99 211.5; rtt-srv p50 21.5
+[load ('pm1', 256, 8, 100)] doca_w2t offered 500000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 502.1 (502.1-502.1) kreq/s; lost 0 (0.0%); rtt p50 228.3 (226.6-228.3) p99 251.5 (250.9-256.7); srv p50 200.2 p99 220.3; rtt-srv p50 26.7
+[load ('pm1', 256, 8, 100)] doca_w2t offered 600000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 594.3 (594.2-595.5) kreq/s; lost 0 (0.0%); rtt p50 1673.5 (1568.3-1750.7) p99 2448.6 (2184.6-2501.6); srv p50 221.1 p99 251.6; rtt-srv p50 1450.9
+[load ('pm1', 256, 8, 100)] doca_w2t offered 700000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 594.3 (594.1-595.4) kreq/s; lost 0 (0.0%); rtt p50 4801.0 (4041.3-4948.9) p99 8936.9 (6897.8-8990.7); srv p50 219.6 p99 248.8; rtt-srv p50 4581.6
+[load ('pm1', 256, 8, 100)] doca_w2t offered 800000: runs 3 (doca_w2t_pm256_r1,doca_w2t_pm256_r2,doca_w2t_pm256_r3); achieved 594.2 (594.0-595.2) kreq/s; lost 0 (0.0%); rtt p50 5899.9 (5643.5-7034.0) p99 11483.8 (10511.4-12865.0); srv p50 219.0 p99 247.3; rtt-srv p50 5680.4
+[load ('pm1', 256, 8, 100)] proxy_fast offered 200000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 201.0 (201.0-201.0) kreq/s; lost 0 (0.0%); rtt p50 218.1 (217.1-218.1) p99 234.8 (232.9-235.1); srv p50 203.9 p99 218.8; rtt-srv p50 13.6
+[load ('pm1', 256, 8, 100)] proxy_fast offered 400000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 401.8 (401.8-401.8) kreq/s; lost 0 (0.0%); rtt p50 232.3 (231.8-232.8) p99 257.4 (257.3-257.9); srv p50 214.1 p99 235.3; rtt-srv p50 18.2
+[load ('pm1', 256, 8, 100)] proxy_fast offered 500000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 502.1 (502.1-502.1) kreq/s; lost 0 (0.0%); rtt p50 246.4 (246.3-246.7) p99 280.9 (280.7-281.6); srv p50 224.6 p99 253.3; rtt-srv p50 21.5
+[load ('pm1', 256, 8, 100)] proxy_fast offered 600000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 602.4 (602.2-602.5) kreq/s; lost 0 (0.0%); rtt p50 261.7 (259.0-264.0) p99 309.8 (304.4-451.1); srv p50 237.0 p99 271.6; rtt-srv p50 23.8
+[load ('pm1', 256, 8, 100)] proxy_fast offered 700000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 622.5 (616.2-657.7) kreq/s; lost 0 (0.0%); rtt p50 268.6 (263.9-13782.8) p99 306.6 (297.0-20930.3); srv p50 242.8 p99 272.8; rtt-srv p50 25.3
+[load ('pm1', 256, 8, 100)] proxy_fast offered 800000: runs 3 (proxy_fast_pm256_r1,proxy_fast_pm256_r2,proxy_fast_pm256_r3); achieved 609.7 (607.3-633.5) kreq/s; lost 0 (0.0%); rtt p50 265.6 (263.7-274.1) p99 301.1 (300.7-320.2); srv p50 240.8 p99 269.1; rtt-srv p50 25.3
+[load ('int8', 192, 8, 400)] doca_w2t offered 100000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 100.4 (100.4-100.4) kreq/s; lost 0 (0.0%); rtt p50 962.8 (962.8-963.1) p99 984.5 (974.4-996.9); srv p50 948.6 p99 969.4; rtt-srv p50 14.1
+[load ('int8', 192, 8, 400)] doca_w2t offered 200000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 200.6 (200.5-200.6) kreq/s; lost 0 (0.0%); rtt p50 1080.8 (1078.4-1082.5) p99 1312.5 (1312.4-1316.4); srv p50 1064.3 p99 1296.2; rtt-srv p50 16.2
+[load ('int8', 192, 8, 400)] doca_w2t offered 250000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 250.5 (250.5-250.5) kreq/s; lost 0 (0.0%); rtt p50 1214.7 (1213.1-1216.1) p99 1335.8 (1331.8-1336.7); srv p50 1197.2 p99 1317.5; rtt-srv p50 17.4
+[load ('int8', 192, 8, 400)] doca_w2t offered 300000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 290.1 (290.1-290.6) kreq/s; lost 0 (0.0%); rtt p50 7227.5 (6660.9-7229.2) p99 12927.4 (12327.1-12987.7); srv p50 7207.9 p99 12908.7; rtt-srv p50 19.1
+[load ('int8', 192, 8, 400)] doca_w2t offered 350000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 289.6 (289.5-290.4) kreq/s; lost 13604 (13.6%); rtt p50 13987.7 (13960.6-13997.5) p99 14182.0 (14162.4-14185.5); srv p50 13967.8 p99 14161.7; rtt-srv p50 19.2
+[load ('int8', 192, 8, 400)] doca_w2t offered 400000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 289.5 (289.4-290.1) kreq/s; lost 23946 (23.9%); rtt p50 13984.5 (13954.1-13991.0) p99 14215.9 (14197.7-14223.7); srv p50 13964.7 p99 14196.0; rtt-srv p50 19.8
+[load ('int8', 192, 8, 400)] doca_w2t offered 500000: runs 3 (doca_w2t_i192k400_r1,doca_w2t_i192k400_r2,doca_w2t_i192k400_r3); achieved 288.7 (288.6-288.7) kreq/s; lost 38534 (38.5%); rtt p50 13966.4 (13963.8-13969.9) p99 14328.3 (14325.3-14332.6); srv p50 13944.2 p99 14304.1; rtt-srv p50 22.3
+[load ('int8', 192, 8, 400)] proxy_fast offered 100000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 100.4 (100.4-100.4) kreq/s; lost 0 (0.0%); rtt p50 974.4 (972.4-974.4) p99 1132.6 (1123.4-1141.4); srv p50 962.2 p99 1120.9; rtt-srv p50 11.8
+[load ('int8', 192, 8, 400)] proxy_fast offered 200000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 200.6 (200.6-200.6) kreq/s; lost 0 (0.0%); rtt p50 1078.0 (1078.0-1078.2) p99 1321.3 (1321.2-1321.3); srv p50 1064.4 p99 1308.0; rtt-srv p50 13.3
+[load ('int8', 192, 8, 400)] proxy_fast offered 250000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 250.5 (250.5-250.5) kreq/s; lost 0 (0.0%); rtt p50 1217.2 (1214.8-1219.6) p99 1340.2 (1337.2-1341.7); srv p50 1202.6 p99 1325.2; rtt-srv p50 14.4
+[load ('int8', 192, 8, 400)] proxy_fast offered 300000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 291.2 (290.9-291.3) kreq/s; lost 0 (0.0%); rtt p50 6265.7 (5933.5-6397.2) p99 11562.4 (11530.0-11895.0); srv p50 6250.3 p99 11549.2; rtt-srv p50 15.1
+[load ('int8', 192, 8, 400)] proxy_fast offered 350000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 290.7 (290.7-291.3) kreq/s; lost 13004 (13.0%); rtt p50 14904.8 (14845.8-14912.8) p99 15097.8 (15040.8-15108.2); srv p50 13944.5 p99 14157.9; rtt-srv p50 935.0
+[load ('int8', 192, 8, 400)] proxy_fast offered 400000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 290.9 (290.6-291.0) kreq/s; lost 23311 (23.3%); rtt p50 14847.9 (14847.9-14897.3) p99 15111.6 (15025.6-15112.4); srv p50 13908.4 p99 14169.5; rtt-srv p50 947.2
+[load ('int8', 192, 8, 400)] proxy_fast offered 500000: runs 3 (proxy_fast_i192k400_r1,proxy_fast_i192k400_r2,proxy_fast_i192k400_r3); achieved 289.7 (289.7-290.3) kreq/s; lost 38014 (38.0%); rtt p50 14880.9 (14831.3-14885.8) p99 15139.5 (15061.4-15145.4); srv p50 13911.4 p99 14224.5; rtt-srv p50 958.3
+[little i192k400] doca_w2t offered 300000: achieved 290.1 kreq/s, C/X = 14119 us, measured srv p50 7208 us, N_w/X = 1282 us (effective solve under full load)
+[little i192k400] doca_w2t offered 350000: achieved 289.6 kreq/s, C/X = 14144 us, measured srv p50 13968 us, N_w/X = 1285 us (effective solve under full load)
+[little i192k400] doca_w2t offered 400000: achieved 289.5 kreq/s, C/X = 14149 us, measured srv p50 13965 us, N_w/X = 1285 us (effective solve under full load)
+[little i192k400] doca_w2t offered 500000: achieved 288.7 kreq/s, C/X = 14188 us, measured srv p50 13944 us, N_w/X = 1289 us (effective solve under full load)
+[little i192k400] proxy_fast offered 300000: achieved 291.2 kreq/s, C/X = 14066 us, measured srv p50 6250 us, N_w/X = 1277 us (effective solve under full load)
+[little i192k400] proxy_fast offered 350000: achieved 290.7 kreq/s, C/X = 14090 us, measured srv p50 13945 us, N_w/X = 1280 us (effective solve under full load)
+[little i192k400] proxy_fast offered 400000: achieved 290.9 kreq/s, C/X = 14080 us, measured srv p50 13908 us, N_w/X = 1279 us (effective solve under full load)
+[little i192k400] proxy_fast offered 500000: achieved 289.7 kreq/s, C/X = 14139 us, measured srv p50 13911 us, N_w/X = 1284 us (effective solve under full load)
+[decomp] ('int8', 64, 8, 50) launch_fast (launch_fast_int8_n64_B8_K50_--window_1.csv): mean rtt 67.8 = solve 48.2 + queue 0.0 + io 9.0 + rest 10.6 us
+[decomp] ('int8', 64, 8, 50) proxy_fast (proxy_fast_int8_n64_B8_K50_--window_1.csv): mean rtt 71.0 = solve 48.2 + queue 0.0 + io 12.1 + rest 10.7 us
+[decomp] ('int8', 64, 8, 50) doca_w2t (doca_w2t_int8_n64_B8_K50_--window_1.csv): mean rtt 62.2 = solve 45.9 + queue 2.0 + io 0.8 + rest 13.5 us
+[decomp] ('int8', 64, 8, 100) launch_fast (launch_fast_int8_n64_B8_K100_--window_1.csv): mean rtt 106.7 = solve 86.5 + queue 0.0 + io 9.5 + rest 10.6 us
+[decomp] ('int8', 64, 8, 100) proxy_fast (proxy_fast_int8_n64_B8_K100_--window_1.csv): mean rtt 110.1 = solve 87.5 + queue 0.0 + io 11.9 + rest 10.7 us
+[decomp] ('int8', 64, 8, 100) doca_w2t (doca_w2t_int8_n64_B8_K100_--window_1.csv): mean rtt 101.7 = solve 85.5 + queue 2.0 + io 0.8 + rest 13.3 us
+[decomp] ('int8', 64, 8, 200) launch_fast (launch_fast_int8_n64_B8_K200_--window_1.csv): mean rtt 185.5 = solve 163.4 + queue 0.0 + io 11.5 + rest 10.6 us
+[decomp] ('int8', 64, 8, 200) proxy_fast (proxy_fast_int8_n64_B8_K200_--window_1.csv): mean rtt 188.6 = solve 166.0 + queue 0.0 + io 11.9 + rest 10.7 us
+[decomp] ('int8', 64, 8, 200) doca_w2t (doca_w2t_int8_n64_B8_K200_--window_1.csv): mean rtt 181.5 = solve 164.8 + queue 2.0 + io 0.9 + rest 13.8 us
+[decomp] ('int8', 64, 8, 400) launch_fast (launch_fast_int8_n64_B8_K400_--window_1.csv): mean rtt 338.3 = solve 318.1 + queue 0.0 + io 9.5 + rest 10.7 us
+[decomp] ('int8', 64, 8, 400) proxy_fast (proxy_fast_int8_n64_B8_K400_--window_1.csv): mean rtt 345.5 = solve 323.0 + queue 0.0 + io 11.9 + rest 10.6 us
+[decomp] ('int8', 64, 8, 400) doca_w2t (doca_w2t_r2_int8_n64_B8_K400_--window_1.csv): mean rtt 340.9 = solve 323.9 + queue 2.1 + io 0.9 + rest 13.9 us
+[decomp] ('int8', 128, 8, 50) launch_fast (launch_fast_int8_n128_B8_K50_--window_1.csv): mean rtt 104.7 = solve 82.2 + queue 0.0 + io 11.9 + rest 10.6 us
+[decomp] ('int8', 128, 8, 50) proxy_fast (proxy_fast_int8_n128_B8_K50_--window_1.csv): mean rtt 104.8 = solve 82.4 + queue 0.0 + io 11.6 + rest 10.8 us
+[decomp] ('int8', 128, 8, 50) doca_w2t (doca_w2t_int8_n128_B8_K50_--window_1.csv): mean rtt 96.0 = solve 80.0 + queue 2.1 + io 0.8 + rest 13.1 us
+[decomp] ('int8', 128, 8, 100) launch_fast (launch_fast_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 176.3 = solve 151.6 + queue 0.0 + io 13.9 + rest 10.8 us
+[decomp] ('int8', 128, 8, 100) proxy_fast (proxy_fast_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 175.7 = solve 153.0 + queue 0.0 + io 12.0 + rest 10.6 us
+[decomp] ('int8', 128, 8, 100) doca_w2t (doca_w2t_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 166.4 = solve 149.9 + queue 2.0 + io 0.8 + rest 13.7 us
+[decomp] ('int8', 128, 8, 200) launch_fast (launch_fast_int8_n128_B8_K200_--window_1.csv): mean rtt 313.8 = solve 289.2 + queue 0.0 + io 13.9 + rest 10.7 us
+[decomp] ('int8', 128, 8, 200) proxy_fast (proxy_fast_int8_n128_B8_K200_--window_1.csv): mean rtt 314.5 = solve 291.9 + queue 0.0 + io 11.6 + rest 11.0 us
+[decomp] ('int8', 128, 8, 200) doca_w2t (doca_w2t_int8_n128_B8_K200_--window_1.csv): mean rtt 307.2 = solve 290.5 + queue 2.1 + io 0.9 + rest 13.8 us
+[decomp] ('int8', 128, 8, 400) launch_fast (launch_fast_r2_int8_n128_B8_K400_--window_1.csv): mean rtt 587.0 = solve 566.8 + queue 0.0 + io 9.3 + rest 10.8 us
+[decomp] ('int8', 128, 8, 400) proxy_fast (proxy_fast_r2_int8_n128_B8_K400_--window_1.csv): mean rtt 595.7 = solve 572.9 + queue 0.0 + io 11.9 + rest 10.9 us
+[decomp] ('int8', 128, 8, 400) doca_w2t (doca_w2t_r2_int8_n128_B8_K400_--window_1.csv): mean rtt 588.1 = solve 571.7 + queue 2.1 + io 0.8 + rest 13.4 us
+[decomp] ('int8', 192, 8, 50) launch_fast (launch_fast_int8_n192_B8_K50_--window_1.csv): mean rtt 154.4 = solve 130.7 + queue 0.0 + io 12.5 + rest 11.1 us
+[decomp] ('int8', 192, 8, 50) proxy_fast (proxy_fast_int8_n192_B8_K50_--window_1.csv): mean rtt 155.3 = solve 132.5 + queue 0.0 + io 11.7 + rest 11.1 us
+[decomp] ('int8', 192, 8, 50) doca_w2t (doca_w2t_int8_n192_B8_K50_--window_1.csv): mean rtt 146.5 = solve 129.9 + queue 2.1 + io 0.8 + rest 13.7 us
+[decomp] ('int8', 192, 8, 100) launch_fast (launch_fast_int8_n192_B8_K100_--window_1.csv): mean rtt 266.1 = solve 245.6 + queue 0.0 + io 9.3 + rest 11.2 us
+[decomp] ('int8', 192, 8, 100) proxy_fast (proxy_fast_int8_n192_B8_K100_--window_1.csv): mean rtt 271.6 = solve 249.0 + queue 0.0 + io 11.6 + rest 11.0 us
+[decomp] ('int8', 192, 8, 100) doca_w2t (doca_w2t_int8_n192_B8_K100_--window_1.csv): mean rtt 262.9 = solve 246.5 + queue 2.1 + io 0.8 + rest 13.5 us
+[decomp] ('int8', 192, 8, 200) launch_fast (launch_fast_int8_n192_B8_K200_--window_1.csv): mean rtt 498.6 = solve 475.3 + queue 0.0 + io 12.1 + rest 11.2 us
+[decomp] ('int8', 192, 8, 200) proxy_fast (proxy_fast_int8_n192_B8_K200_--window_1.csv): mean rtt 505.1 = solve 482.0 + queue 0.0 + io 11.9 + rest 11.2 us
+[decomp] ('int8', 192, 8, 200) doca_w2t (doca_w2t_r2_int8_n192_B8_K200_--window_1.csv): mean rtt 500.2 = solve 479.6 + queue 2.0 + io 2.1 + rest 16.5 us
+[decomp] ('int8', 192, 8, 400) launch_fast (launch_fast_r2_int8_n192_B8_K400_--window_1.csv): mean rtt 960.6 = solve 937.9 + queue 0.0 + io 11.5 + rest 11.2 us
+[decomp] ('int8', 192, 8, 400) proxy_fast (proxy_fast_r2_int8_n192_B8_K400_--window_1.csv): mean rtt 971.2 = solve 948.1 + queue 0.0 + io 11.9 + rest 11.2 us
+[decomp] ('int8', 192, 8, 400) doca_w2t (doca_w2t_r2_int8_n192_B8_K400_--window_1.csv): mean rtt 960.0 = solve 943.2 + queue 2.1 + io 0.8 + rest 13.9 us
+[decomp] ('int8', 128, 1, 100) launch_fast (launch_fast_int8_n128_B1_K100_--window_1.csv): mean rtt 92.7 = solve 66.3 + queue 0.0 + io 15.6 + rest 10.8 us
+[decomp] ('int8', 128, 1, 100) proxy_fast (proxy_fast_int8_n128_B1_K100_--window_1.csv): mean rtt 90.3 = solve 68.0 + queue 0.0 + io 11.6 + rest 10.7 us
+[decomp] ('int8', 128, 1, 100) doca_w2t (doca_w2t_int8_n128_B1_K100_--window_1.csv): mean rtt 83.0 = solve 65.9 + queue 2.1 + io 0.9 + rest 14.1 us
+[decomp] ('int8', 128, 32, 100) launch_fast (launch_fast_int8_n128_B32_K100_--window_1.csv): mean rtt 510.5 = solve 487.3 + queue 0.0 + io 12.4 + rest 10.9 us
+[decomp] ('int8', 128, 32, 100) proxy_fast (proxy_fast_int8_n128_B32_K100_--window_1.csv): mean rtt 506.0 = solve 482.7 + queue 0.0 + io 12.4 + rest 10.9 us
+[decomp] ('int8', 128, 32, 100) doca_w2t (doca_w2t_int8_n128_B32_K100_--window_1.csv): mean rtt 500.6 = solve 480.9 + queue 2.4 + io 1.8 + rest 15.5 us
+[decomp] ('pm1', 64, 8, 100) launch_fast (launch_fast_pm1_n64_B8_K100_--window_1.csv): mean rtt 104.2 = solve 78.3 + queue 0.0 + io 15.3 + rest 10.6 us
+[decomp] ('pm1', 64, 8, 100) proxy_fast (proxy_fast_pm1_n64_B8_K100_--window_1.csv): mean rtt 100.1 = solve 77.8 + queue 0.0 + io 11.6 + rest 10.6 us
+[decomp] ('pm1', 64, 8, 100) doca_w2t (doca_w2t_r2_pm1_n64_B8_K100_--window_1.csv): mean rtt 92.3 = solve 75.9 + queue 2.1 + io 0.8 + rest 13.5 us
+[decomp] ('pm1', 128, 8, 100) launch_fast (launch_fast_pm1_n128_B8_K100_--window_1.csv): mean rtt 129.5 = solve 108.3 + queue 0.0 + io 10.5 + rest 10.7 us
+[decomp] ('pm1', 128, 8, 100) proxy_fast (proxy_fast_pm1_n128_B8_K100_--window_1.csv): mean rtt 130.7 = solve 108.3 + queue 0.0 + io 11.5 + rest 10.9 us
+[decomp] ('pm1', 128, 8, 100) doca_w2t (doca_w2t_pm1_n128_B8_K100_--window_1.csv): mean rtt 124.7 = solve 106.1 + queue 2.2 + io 1.0 + rest 15.4 us
+[decomp] ('pm1', 256, 8, 100) launch_fast (launch_fast_pm1_n256_B8_K100_--window_1.csv): mean rtt 215.8 = solve 190.7 + queue 0.0 + io 14.0 + rest 11.1 us
+[decomp] ('pm1', 256, 8, 100) proxy_fast (proxy_fast_pm1_n256_B8_K100_--window_1.csv): mean rtt 215.4 = solve 192.5 + queue 0.0 + io 11.8 + rest 11.1 us
+[decomp] ('pm1', 256, 8, 100) doca_w2t (doca_w2t_pm1_n256_B8_K100_--window_1.csv): mean rtt 206.9 = solve 189.8 + queue 2.4 + io 0.8 + rest 13.9 us
+[decomp] ('pm1', 512, 8, 100) launch_fast (launch_fast_pm1_n512_B8_K100_--window_1.csv): mean rtt 450.6 = solve 430.0 + queue 0.0 + io 9.5 + rest 11.1 us
+[decomp] ('pm1', 512, 8, 100) proxy_fast (proxy_fast_pm1_n512_B8_K100_--window_1.csv): mean rtt 437.2 = solve 414.5 + queue 0.0 + io 11.7 + rest 11.0 us
+[decomp] ('pm1', 512, 8, 100) doca_w2t (doca_w2t_pm1_n512_B8_K100_--window_1.csv): mean rtt 431.9 = solve 415.1 + queue 2.4 + io 0.8 + rest 13.5 us
+[decomp] ('ternary', 256, 8, 100) launch_fast (launch_fast_ternary_n256_B8_K100_--window_1.csv): mean rtt 252.8 = solve 227.0 + queue 0.0 + io 14.6 + rest 11.3 us
+[decomp] ('ternary', 256, 8, 100) proxy_fast (proxy_fast_ternary_n256_B8_K100_--window_1.csv): mean rtt 256.5 = solve 233.6 + queue 0.0 + io 11.8 + rest 11.1 us
+[decomp] ('ternary', 256, 8, 100) doca_w2t (doca_w2t_ternary_n256_B8_K100_--window_1.csv): mean rtt 249.8 = solve 232.3 + queue 2.4 + io 0.9 + rest 14.2 us
+[decomp] launch_fast: mean RTT minus mean solve over 19 settings: min 19.6 median 22.7 max 26.4 us
+[decomp] proxy_fast: mean RTT minus mean solve over 19 settings: min 22.3 median 22.7 max 23.3 us
+[decomp] doca_w2t: mean RTT minus mean solve over 19 settings: min 16.0 median 16.7 max 20.6 us
+[solve vs load] unloaded (doca_w2t_r2_int8_n128_B8_K100_--window_1.csv): solve p50 149.9 p99 151.1; queue p50 2.02 p99 2.14 us
+[solve vs load] offered 400000, 4 runs: solve p50 148.4 p99 175.1; queue p50 2.14 p99 7.41 us
+[solve vs load] offered 600000, 3 runs: solve p50 148.0 p99 174.0; queue p50 4.74 p99 11.49 us
+[solve vs load] offered 700000, 2 runs: solve p50 147.7 p99 169.2; queue p50 5.98 p99 22.05 us
+[solve vs load] offered 800000, 4 runs: solve p50 147.6 p99 162.3; queue p50 5.94 p99 12.16 us
+[breakdown2] launch (launch_int8_n128_B8_K100_--window_1.csv): mean rtt 181.9 = solve 151.6 + queue 0.00 + io 14.40 + rest 15.88 us
+[breakdown2] proxy (proxy_int8_n128_B8_K100_--window_1.csv): mean rtt 260.3 = solve 152.6 + queue 0.00 + io 11.38 + rest 96.28 us
+[breakdown2] launch_fast (launch_fast_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 176.3 = solve 151.6 + queue 0.00 + io 13.85 + rest 10.82 us
+[breakdown2] proxy_fast (proxy_fast_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 175.7 = solve 153.0 + queue 0.00 + io 12.03 + rest 10.65 us
+[breakdown2] doca_w2t (doca_w2t_r2_int8_n128_B8_K100_--window_1.csv): mean rtt 166.4 = solve 149.9 + queue 2.02 + io 0.85 + rest 13.67 us
+[pipeline] 120 configurations with both pipelines; GPU rings 164-2030 kreq/s; CPU rings 165-1025 kreq/s
+[energy] idle_default: no server, cpu 251.9 W (46 samples), gpu 10.1 W (457 samples)
+[energy] doca_default: resident, no traffic: cpu 253.7 W (15), gpu 146.7 W (150)
+[energy] doca_default offered 200000: completed 200.1 kreq/s, cpu 253.7 W (28), gpu 183.7 W (281), total 437.3 W, 2.185 mJ/request; rtt p50 169.50 p99 194.37 lost 0
+[energy] doca_default offered 400000: completed 400.2 kreq/s, cpu 253.6 W (13), gpu 223.4 W (132), total 477.0 W, 1.192 mJ/request; rtt p50 176.77 p99 198.34 lost 0
+[energy] doca_default offered 600000: completed 600.4 kreq/s, cpu 253.6 W (9), gpu 252.4 W (81), total 506.1 W, 0.843 mJ/request; rtt p50 189.79 p99 216.61 lost 0
+[energy] idle_tuned: no server, cpu 361.7 W (40 samples), gpu 9.7 W (397 samples)
+[energy] doca_tuned: resident, no traffic: cpu 364.3 W (15), gpu 146.3 W (150)
+[energy] doca_tuned offered 200000: completed 200.1 kreq/s, cpu 367.9 W (28), gpu 183.2 W (282), total 551.1 W, 2.754 mJ/request; rtt p50 169.06 p99 183.68 lost 0
+[energy] doca_tuned offered 400000: completed 400.2 kreq/s, cpu 367.6 W (13), gpu 222.9 W (131), total 590.5 W, 1.476 mJ/request; rtt p50 176.26 p99 191.04 lost 0
+[energy] doca_tuned offered 600000: completed 600.4 kreq/s, cpu 367.2 W (8), gpu 252.2 W (82), total 619.4 W, 1.032 mJ/request; rtt p50 187.49 p99 208.80 lost 0
+[energy] proxy_tuned: resident, no traffic: cpu 383.0 W (15), gpu 126.1 W (150)
+[energy] proxy_tuned offered 200000: completed 200.1 kreq/s, cpu 377.2 W (28), gpu 166.3 W (287), total 543.6 W, 2.716 mJ/request; rtt p50 177.79 p99 208.10 lost 0
+[energy] proxy_tuned offered 400000: completed 400.2 kreq/s, cpu 377.1 W (14), gpu 195.3 W (141), total 572.4 W, 1.430 mJ/request; rtt p50 197.57 p99 234.56 lost 0
+[energy] proxy_tuned offered 600000: completed 600.4 kreq/s, cpu 377.2 W (12), gpu 203.4 W (110), total 580.6 W, 0.967 mJ/request; rtt p50 240.90 p99 309.99 lost 77
+[energy] offered 200000: GPUNetIO/default 437.3 W vs proxy/tuned 543.6 W: 19.5% lower; per request 2.185 vs 2.716 mJ
+[energy] offered 400000: GPUNetIO/default 477.0 W vs proxy/tuned 572.4 W: 16.7% lower; per request 1.192 vs 1.430 mJ
+[energy] offered 600000: GPUNetIO/default 506.1 W vs proxy/tuned 580.6 W: 12.8% lower; per request 0.843 vs 0.967 mJ
+[energy] default: resident GPUNetIO kernels without traffic add 136.5 W GPU, 1.8 W CPU over no server
+[energy] tuned: resident GPUNetIO kernels without traffic add 136.6 W GPU, 2.6 W CPU over no server
+[energy] tuned host state costs 109.8 W CPU package at idle (default 251.9, tuned 361.7)
